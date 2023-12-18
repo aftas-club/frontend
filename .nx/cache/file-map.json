@@ -1,0 +1,562 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.1.3",
+  "deps": {
+    "@angular/animations": "^17.0.0",
+    "@angular/cdk": "^17.0.0",
+    "@angular/common": "^17.0.0",
+    "@angular/compiler": "^17.0.0",
+    "@angular/core": "^17.0.0",
+    "@angular/forms": "^17.0.0",
+    "@angular/platform-browser": "^17.0.0",
+    "@angular/platform-browser-dynamic": "^17.0.0",
+    "@angular/platform-server": "^17.0.0",
+    "@angular/router": "^17.0.0",
+    "@angular/ssr": "^17.0.5",
+    "@nrwl/angular": "^17.1.3",
+    "@taiga-ui/addon-charts": "^3.56.0",
+    "@taiga-ui/addon-commerce": "^3.56.0",
+    "@taiga-ui/addon-doc": "^3.56.0",
+    "@taiga-ui/addon-mobile": "^3.56.0",
+    "@taiga-ui/addon-preview": "^3.56.0",
+    "@taiga-ui/addon-table": "^3.56.0",
+    "@taiga-ui/addon-tablebars": "^3.56.0",
+    "@taiga-ui/cdk": "^3.56.0",
+    "@taiga-ui/core": "^3.56.0",
+    "@taiga-ui/icons": "^3.56.0",
+    "@taiga-ui/kit": "^3.56.0",
+    "@taiga-ui/layout": "^3.56.0",
+    "@taiga-ui/styles": "^3.56.0",
+    "@tinkoff/ng-dompurify": "^4.0.0",
+    "chart.js": "^4.4.1",
+    "dompurify": "2.2.9",
+    "express": "^4.18.2",
+    "flowbite": "^2.2.0",
+    "jwt-decode": "^4.0.0",
+    "ng2-charts": "^5.0.4",
+    "rxjs": "~7.8.0",
+    "sweetalert2": "^11.10.1",
+    "tailwind-scrollbar": "^3.0.5",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.2",
+    "@angular-devkit/build-angular": "^17.0.5",
+    "@angular/cli": "^17.0.5",
+    "@angular/compiler-cli": "^17.0.0",
+    "@types/dompurify": "2.2.3",
+    "@types/express": "^4.17.17",
+    "@types/jasmine": "~5.1.0",
+    "@types/node": "^18.18.0",
+    "autoprefixer": "^10.4.16",
+    "daisyui": "^4.4.19",
+    "jasmine-core": "~5.1.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.5",
+    "typescript": "~5.2.2"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "market": [
+        {
+          "file": ".editorconfig",
+          "hash": "6686520031028425313"
+        },
+        {
+          "file": ".gitignore",
+          "hash": "13044518069027839699"
+        },
+        {
+          "file": ".nx/cache/file-map.json",
+          "hash": "9153271094934508940"
+        },
+        {
+          "file": ".nx/cache/lockfile.hash",
+          "hash": "15157918025413088484"
+        },
+        {
+          "file": ".nx/cache/parsed-lock-file.json",
+          "hash": "11899602193582802414"
+        },
+        {
+          "file": ".nx/cache/project-graph.json",
+          "hash": "11644672465603700751"
+        },
+        {
+          "file": ".vscode/extensions.json",
+          "hash": "5331566439708925252"
+        },
+        {
+          "file": ".vscode/launch.json",
+          "hash": "17038929134016848735"
+        },
+        {
+          "file": ".vscode/tasks.json",
+          "hash": "5336636969995539451"
+        },
+        {
+          "file": "README.md",
+          "hash": "17548298016230645061"
+        },
+        {
+          "file": "angular.json",
+          "hash": "4512938091415445388"
+        },
+        {
+          "file": "package-lock.json",
+          "hash": "16538655283192737546"
+        },
+        {
+          "file": "package.json",
+          "hash": "14080771807716676955",
+          "deps": [
+            "npm:@angular/animations",
+            "npm:@angular/cdk",
+            "npm:@angular/common",
+            "npm:@angular/compiler",
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@angular/platform-browser",
+            "npm:@angular/platform-browser-dynamic",
+            "npm:@angular/platform-server",
+            "npm:@angular/router",
+            "npm:@angular/ssr",
+            "npm:@nrwl/angular",
+            "npm:@taiga-ui/addon-charts",
+            "npm:@taiga-ui/addon-commerce",
+            "npm:@taiga-ui/addon-doc",
+            "npm:@taiga-ui/addon-mobile",
+            "npm:@taiga-ui/addon-preview",
+            "npm:@taiga-ui/addon-table",
+            "npm:@taiga-ui/addon-tablebars",
+            "npm:@taiga-ui/cdk",
+            "npm:@taiga-ui/core",
+            "npm:@taiga-ui/icons",
+            "npm:@taiga-ui/kit",
+            "npm:@taiga-ui/layout",
+            "npm:@taiga-ui/styles",
+            "npm:@tinkoff/ng-dompurify",
+            "npm:chart.js",
+            "npm:dompurify",
+            "npm:express",
+            "npm:flowbite",
+            "npm:jwt-decode",
+            "npm:ng2-charts",
+            "npm:rxjs",
+            "npm:sweetalert2",
+            "npm:tailwind-scrollbar",
+            "npm:tslib",
+            "npm:zone.js",
+            "npm:@angular-devkit/build-angular",
+            "npm:@angular/cli",
+            "npm:@angular/compiler-cli",
+            "npm:@types/dompurify",
+            "npm:@types/express",
+            "npm:@types/jasmine",
+            "npm:@types/node",
+            "npm:autoprefixer",
+            "npm:daisyui",
+            "npm:jasmine-core",
+            "npm:karma",
+            "npm:karma-chrome-launcher",
+            "npm:karma-coverage",
+            "npm:karma-jasmine",
+            "npm:karma-jasmine-html-reporter",
+            "npm:postcss",
+            "npm:tailwindcss",
+            "npm:typescript"
+          ]
+        },
+        {
+          "file": "server.ts",
+          "hash": "7713808127824314998",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/ssr",
+            "npm:express",
+            "npm:node:url",
+            "npm:node:path"
+          ]
+        },
+        {
+          "file": "src/app/app.component.css",
+          "hash": "17715311238930277790"
+        },
+        {
+          "file": "src/app/app.component.html",
+          "hash": "17816966185630879015"
+        },
+        {
+          "file": "src/app/app.component.spec.ts",
+          "hash": "10746007391879862408",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/app.component.ts",
+          "hash": "7549992441171846081",
+          "deps": [
+            "npm:@tinkoff/ng-dompurify",
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/router",
+            "npm:@angular/forms",
+            "npm:@taiga-ui/core",
+            "npm:@taiga-ui/kit",
+            "npm:@taiga-ui/cdk",
+            "npm:rxjs",
+            "npm:flowbite"
+          ]
+        },
+        {
+          "file": "src/app/app.config.server.ts",
+          "hash": "14750464052796800194",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/platform-server"
+          ]
+        },
+        {
+          "file": "src/app/app.config.ts",
+          "hash": "3811136196228952625",
+          "deps": [
+            "npm:@angular/platform-browser",
+            "npm:@taiga-ui/core",
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "src/app/app.module.ts",
+          "hash": "12935320947182934802",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "src/app/app.routes.ts",
+          "hash": "8323720091929142558",
+          "deps": [
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/core/enum/gender.ts",
+          "hash": "13873426417015308140"
+        },
+        {
+          "file": "src/app/core/enum/identity-document-type.ts",
+          "hash": "3170700787539173391"
+        },
+        {
+          "file": "src/app/core/enum/sex.ts",
+          "hash": "18388770353028905089"
+        },
+        {
+          "file": "src/app/core/interceptors/auth-interceptor.interceptor.spec.ts",
+          "hash": "2297697236180378494",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "src/app/core/interceptors/auth-interceptor.interceptor.ts",
+          "hash": "14683144802886488054",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "src/app/core/interceptors/error-interceptor.interceptor.spec.ts",
+          "hash": "11755312653939041043",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "src/app/core/interceptors/error-interceptor.interceptor.ts",
+          "hash": "3525706507869990365",
+          "deps": [
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "src/app/core/model/address.ts",
+          "hash": "7766284725499554188"
+        },
+        {
+          "file": "src/app/core/model/authentication-persist.ts",
+          "hash": "1918683236224793452",
+          "deps": [
+            "npm:jwt-decode"
+          ]
+        },
+        {
+          "file": "src/app/core/model/authentication-response.ts",
+          "hash": "829387698424021824"
+        },
+        {
+          "file": "src/app/core/model/competition.ts",
+          "hash": "2905428002643973197",
+          "deps": [
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "src/app/core/model/fish.ts",
+          "hash": "14692007835822259773"
+        },
+        {
+          "file": "src/app/core/model/hunting.ts",
+          "hash": "7249463922765837215"
+        },
+        {
+          "file": "src/app/core/model/level.ts",
+          "hash": "12660862480169220132"
+        },
+        {
+          "file": "src/app/core/model/login-request.ts",
+          "hash": "8505780043361329921"
+        },
+        {
+          "file": "src/app/core/model/member.ts",
+          "hash": "11367027321663060899"
+        },
+        {
+          "file": "src/app/core/model/ranking.ts",
+          "hash": "17466980362766861928"
+        },
+        {
+          "file": "src/app/core/model/register-request.ts",
+          "hash": "17711880082477028081"
+        },
+        {
+          "file": "src/app/core/services/authentication.service.spec.ts",
+          "hash": "9336182511222613820",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/core/services/authentication.service.ts",
+          "hash": "9338558912107342410",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "src/app/core/services/routing.service.spec.ts",
+          "hash": "2143361993576471175",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/core/services/routing.service.ts",
+          "hash": "17033983962897806656",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/core/services/token-storage.service.spec.ts",
+          "hash": "5315810637853388495",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/core/services/token-storage.service.ts",
+          "hash": "1444975476114046461",
+          "deps": [
+            "npm:@angular/core",
+            "npm:jwt-decode"
+          ]
+        },
+        {
+          "file": "src/app/features/competition/competition.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/features/competition/competition.component.html",
+          "hash": "9130768717583677548"
+        },
+        {
+          "file": "src/app/features/competition/competition.component.spec.ts",
+          "hash": "3403320286993723810",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/features/competition/competition.component.ts",
+          "hash": "7545614773111139152",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/layout/admin-layout/admin-layout.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/layout/admin-layout/admin-layout.component.html",
+          "hash": "12360746749707865315"
+        },
+        {
+          "file": "src/app/layout/admin-layout/admin-layout.component.spec.ts",
+          "hash": "11040728270847792343",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/layout/admin-layout/admin-layout.component.ts",
+          "hash": "16763428883079180454",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@angular/forms",
+            "npm:@taiga-ui/core",
+            "npm:@taiga-ui/cdk",
+            "npm:rxjs",
+            "npm:flowbite",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "src/app/shared/fish-animation/fish-animation.component.css",
+          "hash": "15513220782733057476"
+        },
+        {
+          "file": "src/app/shared/fish-animation/fish-animation.component.html",
+          "hash": "17845585168954787860"
+        },
+        {
+          "file": "src/app/shared/fish-animation/fish-animation.component.spec.ts",
+          "hash": "4633028856325562834",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/shared/fish-animation/fish-animation.component.ts",
+          "hash": "2312492675934085869",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "src/app/shared/nav-bar/nav-bar.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/shared/nav-bar/nav-bar.component.html",
+          "hash": "3529897166184256404"
+        },
+        {
+          "file": "src/app/shared/nav-bar/nav-bar.component.spec.ts",
+          "hash": "12279613051740568918",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/shared/nav-bar/nav-bar.component.ts",
+          "hash": "10719557562091274283",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "src/app/shared/side-bar/side-bar.component.html",
+          "hash": "4581718005907163687"
+        },
+        {
+          "file": "src/app/shared/side-bar/side-bar.component.spec.ts",
+          "hash": "5070338701528627736",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/shared/side-bar/side-bar.component.ts",
+          "hash": "10348845750830056293",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/favicon.ico",
+          "hash": "3988961587069885523"
+        },
+        {
+          "file": "src/index.html",
+          "hash": "5541775535089600234"
+        },
+        {
+          "file": "src/main.server.ts",
+          "hash": "11653607448136507287",
+          "deps": [
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "src/main.ts",
+          "hash": "4927504514031276065",
+          "deps": [
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "src/styles.css",
+          "hash": "4172455473544633436"
+        },
+        {
+          "file": "tailwind.config.js",
+          "hash": "568475668406747911",
+          "deps": [
+            "npm:tailwind-scrollbar",
+            "npm:flowbite",
+            "npm:daisyui"
+          ]
+        },
+        {
+          "file": "tsconfig.app.json",
+          "hash": "17948364081101022842"
+        },
+        {
+          "file": "tsconfig.json",
+          "hash": "6830907402848794383"
+        },
+        {
+          "file": "tsconfig.spec.json",
+          "hash": "15575553540147145788"
+        }
+      ]
+    },
+    "nonProjectFiles": []
+  }
+}

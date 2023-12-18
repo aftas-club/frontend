@@ -7,10 +7,12 @@ import {routes} from './app.routes';
 import {provideClientHydration} from '@angular/platform-browser';
 import {HttpClientModule} from "@angular/common/http";
 import {CommonModule} from "@angular/common";
+import {AppModule} from "./app.module";
 
 export const appConfig: ApplicationConfig = {
   providers: [
     importProvidersFrom(
+      AppModule,
       CommonModule,
       HttpClientModule,
       TuiRootModule

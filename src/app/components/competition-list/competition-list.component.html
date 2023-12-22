@@ -1,0 +1,118 @@
+<ng-container>
+  <tui-loader
+    class="lg:mx-5 inline-flex h-full max-h-[calc(100vh - 105px)] overflow-y-auto rounded-3xl shadow-sm-light bg-white dark:bg-gray-800 mt-4"
+    [showLoader]="competitions.length == 0"
+    style="max-height:calc(100vh - 138px);"
+  >
+    <app-card-skeleton *ngIf="competitions.length == 0"></app-card-skeleton>
+    <div *ngIf="competitions.length > 0"
+         class="flex flex-col relative pt-10 pb-10 p-5 h-full">
+      <div class="z-30">
+        <div class="mb-5 flex flex-wrap justify-between">
+          <h1 class="text-2xl ml-6">Member :</h1>
+          <button (click)="showDialog()"
+                  class="bg-[#7bbcd1] hover:bg-[#295e6e] dark:bg-[#295e6e] dark:hover:bg-[#7bbcd1] border-none py-2.5 px-5 me-2 mb-2 text-sm font-medium text-white rounded-lg border border-gray-200 focus:z-10">
+            Add Competition
+          </button>
+        </div>
+        <div class="flex flex-wrap mt-7 justify-center gap-16">
+          <div *ngFor="let c of competitions"
+               class="max-w-sm bg-white border border-gray-200 rounded-2xl relative shadow dark:bg-gray-800 dark:border-gray-700">
+            <div
+              class="absolute top-3 left-3 opacity-70 bg-blue-300 rounded-3xl px-4 py-2 text-black font-bold shadow-sm">{{ c.code }}
+            </div>
+            <img class="rounded-t-lg w-full"
+                 [alt]="c.code" priority="normal"
+                 ngSrc="/assets/image.jpeg"
+                 height="358" width="626"
+            />
+            <div class="p-5">
+              <a>
+                <div class="flex justify-between mb-4">
+                  <h5 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    {{ c.title }}
+                  </h5>
+                  <div *ngIf="getCompetitionStatus(c.date, c.startTime, c.endTime) === CompetitionStatus.NOT_STARTED"
+                       class="bg-orange-400 rounded-3xl px-3 py-1 text-white font-medium shadow-sm">
+                    {{ CompetitionStatus.NOT_STARTED }}
+                  </div>
+                  <div *ngIf="getCompetitionStatus(c.date, c.startTime, c.endTime) === CompetitionStatus.CLOSED"
+                       class="bg-red-400 rounded-3xl px-3 py-1 text-white font-medium shadow-sm">
+                    {{ CompetitionStatus.CLOSED }}
+                  </div>
+                  <div *ngIf="getCompetitionStatus(c.date, c.startTime, c.endTime) === CompetitionStatus.OPEN"
+                       class="bg-green-400 rounded-3xl px-3 py-1 text-white font-medium shadow-sm">
+                    {{ CompetitionStatus.OPEN }}
+                  </div>
+                  <div *ngIf="getCompetitionStatus(c.date, c.startTime, c.endTime) === CompetitionStatus.FINISHED"
+                       class="bg-red-500 rounded-3xl px-3 py-1 text-white font-medium shadow-sm">
+                    {{ CompetitionStatus.FINISHED }}
+                  </div>
+                </div>
+              </a>
+              <div class="flex align-baseline gap-2 mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="fill-[#295e6e]" width="23" height="23">
+                  <path
+                    d="M21 20V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2zM9 18H7v-2h2v2zm0-4H7v-2h2v2zm4 4h-2v-2h2v2zm0-4h-2v-2h2v2zm4 4h-2v-2h2v2zm0-4h-2v-2h2v2zm2-5H5V7h14v2z"></path>
+                </svg>
+                <p class="font-normal text-gray-700 dark:text-gray-400">
+                  {{ c.date + ' ' + c.startTime }}
+                </p>
+              </div>
+              <div class="flex align-baseline gap-2 mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="fill-orange-400" width="22" height="22">
+                  <path
+                    d="M12 2C7.589 2 4 5.589 4 9.995 3.971 16.44 11.696 21.784 12 22c0 0 8.029-5.56 8-12 0-4.411-3.589-8-8-8zm0 12c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"></path>
+                </svg>
+                <p class="font-normal text-gray-700 dark:text-gray-400">
+                  {{ Address(c.address) }}
+                </p>
+              </div>
+              <a
+                routerLink="/competition/details/{{ c.id }}"
+                class="inline-flex items-center px-3 py-2 float-right mb-3 text-sm font-medium text-center text-white bg-[#265e73] dark:bg-[#295e6e] rounded-lg hover:bg-[#7bbcd1] dark:hover:bg-[#7bbcd1] focus:outline-none">
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap items-center justify-between mt-10">
+          <button (click)="previousPage()" [disabled]="currentPage <= 0"
+                  class="flex items-center shadow-sm px-5 py-2 disabled:cursor-not-allowed text-sm text-gray-700 capitalize transition-colors duration-200 bg-transparent border rounded-md gap-x-2 hover:bg-gray-100 dark:bg-gray-900 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                 stroke="currentColor"
+                 class="w-5 h-5 rtl:-scale-x-100">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"/>
+            </svg>
+
+            <span>
+                previous
+          </span>
+          </button>
+
+          <div class="items-center hidden md:flex gap-x-3">
+            <a *ngFor="let i of Range(totalPages)" (click)="goToPage(i)"
+               class="px-2 py-1 text-sm rounded-md cursor-pointer"
+               [class]="currentPage == i ? 'text-white bg-[#7bbcd1] dark:bg-[#295e6e]':'text-gray-400 dark:bg-gray-800 bg-blue-100/60'">{{ i }}</a>
+          </div>
+
+          <button (click)="nextPage()" [disabled]="currentPage >= this.totalPages - 1"
+                  class="flex items-center px-5 py-2 disabled:cursor-not-allowed text-sm text-gray-700 capitalize transition-colors duration-200 bg-transparent rounded-md gap-x-2 border hover:bg-gray-100 dark:bg-gray-900 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800">
+            <span>
+                Next
+            </span>
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                 stroke="currentColor"
+                 class="w-5 h-5 rtl:-scale-x-100">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <app-square-animate-top
+        class="absolute transition-all ease-in-out duration-700 top-0 w-full h-full left-0 z-0"
+      ></app-square-animate-top>
+    </div>
+  </tui-loader>
+</ng-container>

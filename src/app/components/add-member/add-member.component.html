@@ -1,0 +1,234 @@
+<ng-container>
+  <div class="z-50 relative">
+    <form
+      [formGroup]="addMemberForm"
+      class="b-form z-50 flex flex-col mt-6 sm:gap-6 transition-none animate-none px-4"
+    >
+      <div class="flex sm:flex-row flex-col justify-center w-full gap-5 sm:gap-10">
+        <div class="flex justify-center flex-col w-full">
+          <label class="block mb-2 sm:mt-0 mt-3 text-sm font-medium text-gray-900 dark:text-white" for="name">
+            First Name :
+          </label>
+          <p class="w-full">
+            <tui-input formControlName="name" id="name">
+              Type the member's first name
+            </tui-input>
+            <tui-error
+              formControlName="name"
+              [error]="[] | tuiFieldError | async"
+            ></tui-error>
+          </p>
+        </div>
+        <div class="flex justify-center flex-col w-full">
+          <label class="block mb-2 sm:mt-0 mt-3 text-sm font-medium text-gray-900 dark:text-white" for="LastName">
+            Last Name :
+          </label>
+          <p class="w-full">
+            <tui-input formControlName="familyName" id="LastName">
+              Type the member's last name
+            </tui-input>
+            <tui-error
+              formControlName="familyName"
+              [error]="[] | tuiFieldError | async"
+            ></tui-error>
+          </p>
+        </div>
+      </div>
+      <div class="flex sm:flex-row flex-col justify-center w-full gap-5 sm:gap-10">
+        <div class="flex justify-center flex-col w-full">
+          <label class="block sm:mt-0 mb-2 mt-3 text-sm font-medium text-gray-900 dark:text-white"
+                 for="IdentityDocument">
+            Identity Document :
+          </label>
+          <p class="w-full">
+            <tui-select
+              [tuiTextfieldLabelOutside]="true"
+              class="tui-input w-full"
+              formControlName="identityDocument"
+              id="IdentityDocument"
+            >
+              identity Document Type
+              <tui-data-list-wrapper
+                *tuiDataList
+                [items]="Object.values(IdentityDocumentType)"
+              ></tui-data-list-wrapper>
+            </tui-select>
+            <tui-error
+              formControlName="identityDocument"
+              [error]="[] | tuiFieldError | async"
+            ></tui-error>
+          </p>
+        </div>
+        <div class="flex justify-center flex-col w-full">
+          <label class="block mb-2 sm:mt-0 mt-3 text-sm font-medium text-gray-900 dark:text-white" for="IdentityNumber">
+            Identity Number :
+          </label>
+          <p class="w-full">
+            <tui-input
+              formControlName="identityNumber"
+              id="IdentityNumber"
+            >
+              identity Number
+            </tui-input>
+            <tui-error
+              formControlName="identityNumber"
+              [error]="[] | tuiFieldError | async"
+            ></tui-error>
+          </p>
+        </div>
+      </div>
+      <div class="flex sm:flex-row flex-col justify-center w-full gap-5 sm:gap-10">
+        <div class="flex justify-center flex-col w-full">
+          <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="BirthDate">
+            Birth Date :
+          </label>
+          <p class="w-full">
+            <tui-input-date formControlName="birthDate" id="BirthDate">
+              birth Date
+            </tui-input-date>
+            <tui-error
+              formControlName="birthDate"
+              [error]="[] | tuiFieldError | async"
+            ></tui-error>
+          </p>
+        </div>
+        <div class="flex justify-center flex-col w-full">
+          <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="Gender">
+            Gender :
+          </label>
+          <p class="w-full">
+            <tui-select
+              [tuiTextfieldLabelOutside]="true"
+              class="tui-input w-full"
+              formControlName="gender"
+              id="Gender"
+            >
+              Chose Type the member's gender
+              <tui-data-list-wrapper
+                *tuiDataList
+                [items]="Object.values(Gender)"
+              ></tui-data-list-wrapper>
+            </tui-select>
+            <tui-error
+              formControlName="gender"
+              [error]="[] | tuiFieldError | async"
+            ></tui-error>
+          </p>
+        </div>
+      </div>
+      <div class="flex sm:flex-row flex-col justify-center w-full gap-5 sm:gap-10">
+        <div class="flex flex-col w-full">
+          <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="email">
+            Email :
+          </label>
+          <p class="w-full">
+            <tui-input
+              formControlName="email"
+              id="email"
+            >
+              Type the member's email
+            </tui-input>
+            <tui-error
+              formControlName="email"
+              [error]="[] | tuiFieldError | async"
+            ></tui-error>
+          </p>
+        </div>
+        <div class="flex flex-col w-full">
+          <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="AccessionDate">
+            Accession Date :
+          </label>
+          <p class="w-full">
+            <tui-input-date formControlName="accessionDate" id="AccessionDate">
+              accession Date
+            </tui-input-date>
+            <tui-error
+              formControlName="accessionDate"
+              [error]="[] | tuiFieldError | async"
+            ></tui-error>
+          </p>
+        </div>
+      </div>
+      <div class="flex sm:flex-row flex-col justify-center w-full gap-5 sm:gap-10">
+        <div class="flex flex-col w-full">
+          <label class="block mb-2 sm:mt-0 mt-3 text-sm font-medium text-gray-900 dark:text-white" for="Nationality">
+            Nationality :
+          </label>
+          <p class="w-full">
+            <tui-input
+              formControlName="nationality"
+              id="Nationality"
+            >
+              Type the member's nationality
+            </tui-input>
+            <tui-error
+              formControlName="nationality"
+              [error]="[] | tuiFieldError | async"
+            ></tui-error>
+          </p>
+        </div>
+        <div class="flex flex-col w-full">
+          <label class="block mb-2 sm:mt-0 mt-3 text-sm font-medium text-gray-900 dark:text-white" for="image">
+            Image :
+          </label>
+          <p class="w-full h-full">
+            <tui-input-files
+              *ngIf="!control.value"
+              id="image"
+              accept="image/*"
+              [formControl]="control"
+              (reject)="onReject($event)"
+              tuiTextfieldSize="m"
+            ></tui-input-files>
+
+            <tui-files class="w-full">
+              <tui-file
+                style="padding: 0.925rem 2.1875rem 0.9625rem 0.625rem;"
+                *ngIf="loadedFiles$ | async as file"
+                [file]="file"
+                [showDelete]="control.enabled"
+                (removed)="removeFile()"
+                tuiTextfieldSize="m"
+              ></tui-file>
+
+              <tui-file
+                style="padding: 0.325rem 2.1875rem 0.3625rem 0.625rem;"
+                *ngIf="rejectedFiles$ | async as file"
+                state="error"
+                [file]="file"
+                [showDelete]="control.enabled"
+                (removed)="clearRejected()"
+                tuiTextfieldSize="m"
+              ></tui-file>
+
+              <tui-file
+                style="padding: 0.925rem 2.1875rem 0.9625rem 0.625rem;"
+                *ngIf="loadingFiles$ | async as file"
+                state="loading"
+                [file]="file"
+                [showDelete]="control.enabled"
+              ></tui-file>
+            </tui-files>
+          </p>
+        </div>
+      </div>
+      <div>
+        <button
+          (click)="addMember()"
+          [disabled]="isButtonDisabled"
+          class="bg-[#7bbcd1] float-right hover:bg-[#295e6e] mt-4 dark:bg-[#295e6e] dark:hover:bg-[#7bbcd1] disabled:cursor-not-allowed border-none py-2.5 px-5 text-sm font-medium text-white rounded-lg border border-gray-200 focus:z-10">
+          Add member
+        </button>
+      </div>
+    </form>
+  </div>
+  <div class="w-full z-10">
+    <app-ocean
+      class="opacity-40 absolute top-0 w-full h-full left-0 z-0"
+    ></app-ocean>
+    <app-waves
+      class="opacity-[0.09] absolute bottom-0 w-full left-0 z-0 rounded-3xl"
+    >
+    </app-waves>
+  </div>
+</ng-container>

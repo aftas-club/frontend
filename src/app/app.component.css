@@ -1,3 +1,3 @@
-.jief {
-  color: #468da4;
+:host {
+  --tui-primary: #295e6e !important;
 }

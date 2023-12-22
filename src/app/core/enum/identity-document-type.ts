@@ -1,6 +1,6 @@
 export enum IdentityDocumentType {
-  CIN,
-  PASSPORT,
-  PERMIT,
-  CARTE_RESIDENT
+  CIN = 'CIN',
+  PASSPORT = 'PASSPORT',
+  PERMIT = 'PERMIT',
+  CARTE_RESIDENT = 'CARTE_RESIDENT',
 }

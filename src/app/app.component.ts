@@ -15,7 +15,6 @@ import {
 } from '@taiga-ui/core';
 import {TuiDataListWrapperModule, TuiInputModule, TuiSelectModule, TuiToggleModule} from '@taiga-ui/kit';
 import {AbstractTuiThemeSwitcher, TuiLetModule} from "@taiga-ui/cdk";
-import {BehaviorSubject, Observable} from 'rxjs';
 import {initFlowbite} from 'flowbite';
 import {HttpClientModule} from "@angular/common/http";
 
@@ -44,7 +43,12 @@ import {HttpClientModule} from "@angular/common/http";
     TuiDataListWrapperModule,
   ],
   templateUrl: './app.component.html',
-  providers: [{provide: TUI_SANITIZER, useClass: NgDompurifySanitizer}]
+  providers: [
+    {
+      provide: TUI_SANITIZER,
+      useClass: NgDompurifySanitizer
+    }
+  ]
 })
 export class AppComponent extends AbstractTuiThemeSwitcher implements OnInit {
   ngOnInit(): void {
@@ -52,13 +56,4 @@ export class AppComponent extends AbstractTuiThemeSwitcher implements OnInit {
   }
 
   title = 'market';
-  isNight = false;
-  private nightSubject = new BehaviorSubject<boolean>(this.isNight);
-
-  night$: Observable<boolean> = this.nightSubject.asObservable();
-
-  toggleNight() {
-    this.isNight = !this.isNight;
-    this.nightSubject.next(this.isNight);
-  }
 }

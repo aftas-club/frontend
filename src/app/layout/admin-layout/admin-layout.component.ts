@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {TuiModeModule, TuiRootModule, TuiThemeNightModule} from '@taiga-ui/core';
 import {AbstractTuiThemeSwitcher, TuiLetModule} from "@taiga-ui/cdk";
 import {BehaviorSubject, Observable} from 'rxjs';
 import {initFlowbite} from 'flowbite';
@@ -10,6 +9,7 @@ import {NavBarComponent} from "../../shared/nav-bar/nav-bar.component";
 import {AsyncPipe, NgIf} from "@angular/common";
 import {OceanComponent} from "../../shared/ocean/ocean.component";
 import {DripDropAnimationComponent} from "../../shared/drip-drop-animation/drip-drop-animation.component";
+import {TuiModeModule, TuiRootModule, TuiScrollbarModule, TuiThemeNightModule} from "@taiga-ui/core";
 
 @Component({
   selector: 'app-admin-layout',
@@ -22,12 +22,13 @@ import {DripDropAnimationComponent} from "../../shared/drip-drop-animation/drip-
     ReactiveFormsModule,
     RouterOutlet,
     TuiLetModule,
-    TuiRootModule,
-    TuiThemeNightModule,
-    TuiModeModule,
     FormsModule,
     OceanComponent,
-    DripDropAnimationComponent
+    DripDropAnimationComponent,
+    TuiScrollbarModule,
+    TuiThemeNightModule,
+    TuiRootModule,
+    TuiModeModule,
   ],
   templateUrl: './admin-layout.component.html',
   styleUrl: './admin-layout.component.css'
@@ -50,5 +51,7 @@ export class AdminLayoutComponent extends AbstractTuiThemeSwitcher implements On
 
   IsOpenedSideBar($event: boolean) {
     this.isOpenedSideBar = $event;
+    const event = new CustomEvent("OpenedSideBar", {detail: this.isOpenedSideBar});
+    window.dispatchEvent(event);
   }
 }

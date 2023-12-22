@@ -1,0 +1,175 @@
+<ng-container>
+  <div class="z-50 relative">
+    <form
+      [formGroup]="addCompetitionForm"
+      class="b-form z-50 flex flex-col mt-6 sm:gap-6 transition-none animate-none px-4"
+    >
+      <div class="flex sm:flex-row flex-col justify-center w-full gap-5 sm:gap-10">
+        <div class="flex justify-center flex-col w-full">
+          <label class="block mb-2 sm:mt-0 mt-3 text-sm font-medium text-gray-900 dark:text-white" for="title">
+            Title :
+          </label>
+          <p class="w-full">
+            <tui-input formControlName="title" id="title">
+              Type the Competition's title
+            </tui-input>
+            <tui-error
+              formControlName="title"
+              [error]="[] | tuiFieldError | async"
+            ></tui-error>
+          </p>
+        </div>
+        <div class="flex justify-center flex-col w-full">
+          <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="CompetitionDate">
+            Competition Date :
+          </label>
+          <p class="w-full">
+            <tui-input-date formControlName="date" id="CompetitionDate">
+              Competition Date
+            </tui-input-date>
+            <tui-error
+              formControlName="date"
+              [error]="[] | tuiFieldError | async"
+            ></tui-error>
+          </p>
+        </div>
+      </div>
+      <div class="flex sm:flex-row flex-col justify-center w-full gap-5 sm:gap-10">
+        <div class="flex justify-center flex-col w-full">
+          <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="CompetitionStartTime">
+            Competition Start time :
+          </label>
+          <p class="w-full">
+            <tui-input-time formControlName="startTime" id="CompetitionStartTime" [items]="timeRange">
+              Competition Start time
+            </tui-input-time>
+            <tui-error
+              formControlName="startTime"
+              [error]="[] | tuiFieldError | async"
+            ></tui-error>
+          </p>
+        </div>
+        <div class="flex justify-center flex-col w-full">
+          <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="CompetitionEndTime">
+            Competition End Time :
+          </label>
+          <p class="w-full">
+            <tui-input-time formControlName="endTime" id="CompetitionEndTime" [items]="timeRange">
+              Competition End Time
+            </tui-input-time>
+            <tui-error
+              formControlName="endTime"
+              [error]="[] | tuiFieldError | async"
+            ></tui-error>
+          </p>
+        </div>
+      </div>
+      <div class="flex sm:flex-row flex-col justify-center w-full gap-5 sm:gap-10">
+        <div class="flex justify-center flex-col w-full">
+          <label class="block mb-2 sm:mt-0 mt-3 text-sm font-medium text-gray-900 dark:text-white" for="amount">
+            amount :
+          </label>
+          <p class="w-full">
+            <tui-input-number formControlName="amount" id="amount">
+              Type the competition amount
+            </tui-input-number>
+            <tui-error
+              formControlName="amount"
+              [error]="[] | tuiFieldError | async"
+            ></tui-error>
+          </p>
+        </div>
+        <div class="flex justify-center flex-col w-full">
+          <label class="block mb-2 sm:mt-0 mt-3 text-sm font-medium text-gray-900 dark:text-white"
+                 for="numberOfParticipants">
+            number Of Participants :
+          </label>
+          <p class="w-full">
+            <tui-input-number formControlName="numberOfParticipants" id="numberOfParticipants">
+              Type the max number Of Participants
+            </tui-input-number>
+            <tui-error
+              formControlName="numberOfParticipants"
+              [error]="[] | tuiFieldError | async"
+            ></tui-error>
+          </p>
+        </div>
+      </div>
+      <div class="w-full">
+        <label class="block mb-2 sm:mt-0 mt-3 text-sm font-medium text-gray-900 dark:text-white" for="address">
+          Address :
+        </label>
+        <div tuiGroup class="group w-full" id="address">
+          <div>
+            <tui-input
+              formControlName="street"
+              tuiHintContent="Write a number"
+              class="tui-group__inherit-item"
+            >
+              street
+              <input
+                placeholder="street"
+                tuiTextfield
+              />
+            </tui-input>
+            <tui-error
+              formControlName="street"
+              [error]="[] | tuiFieldError | async"
+            ></tui-error>
+          </div>
+          <div>
+            <tui-input
+              formControlName="region"
+              tuiHintContent="Write a number"
+              class="tui-group__inherit-item"
+            >
+              region
+              <input
+                placeholder="region"
+                tuiTextfield
+              />
+            </tui-input>
+            <tui-error
+              formControlName="region"
+              [error]="[] | tuiFieldError | async"
+            ></tui-error>
+          </div>
+          <div>
+            <tui-input
+              formControlName="city"
+              tuiHintContent="Write an region"
+              class="tui-group__inherit-item"
+            >
+              city
+              <input
+                placeholder="city"
+                tuiTextfield
+              />
+            </tui-input>
+            <tui-error
+              formControlName="city"
+              [error]="[] | tuiFieldError | async"
+            ></tui-error>
+          </div>
+        </div>
+      </div>
+      <div>
+        <button
+          (click)="addCompetition()"
+          [disabled]="isButtonDisabled"
+          class="bg-[#7bbcd1] float-right hover:bg-[#295e6e] mt-4 dark:bg-[#295e6e] dark:hover:bg-[#7bbcd1] disabled:cursor-not-allowed border-none py-2.5 px-5 text-sm font-medium text-white rounded-lg border border-gray-200 focus:z-10">
+          Add member
+        </button>
+      </div>
+    </form>
+  </div>
+  <div class="w-full z-10">
+    <app-ocean
+      class="opacity-40 absolute top-0 w-full h-full left-0 z-0"
+    ></app-ocean>
+    <app-waves
+      class="opacity-[0.09] absolute bottom-0 w-full left-0 z-0 rounded-3xl"
+    >
+    </app-waves>
+  </div>
+</ng-container>

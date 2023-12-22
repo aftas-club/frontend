@@ -1,8 +1,8 @@
 export interface Address {
-  region?: string;
+  region?: string |null;
   district?: string;
-  city?: string;
-  street?: string;
+  city?: string |null;
+  street?: string | null;
   building?: number;
   apartment?: number;
   postalCode?: number;

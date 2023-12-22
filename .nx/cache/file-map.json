@@ -73,7 +73,7 @@
         },
         {
           "file": ".nx/cache/file-map.json",
-          "hash": "9153271094934508940"
+          "hash": "16718207208688323467"
         },
         {
           "file": ".nx/cache/lockfile.hash",
@@ -85,7 +85,7 @@
         },
         {
           "file": ".nx/cache/project-graph.json",
-          "hash": "11644672465603700751"
+          "hash": "10683017068537371891"
         },
         {
           "file": ".vscode/extensions.json",
@@ -101,7 +101,7 @@
         },
         {
           "file": "README.md",
-          "hash": "17548298016230645061"
+          "hash": "6171012334137356142"
         },
         {
           "file": "angular.json",
@@ -185,7 +185,7 @@
         },
         {
           "file": "src/app/app.component.css",
-          "hash": "17715311238930277790"
+          "hash": "3244421341483603138"
         },
         {
           "file": "src/app/app.component.html",
@@ -200,7 +200,7 @@
         },
         {
           "file": "src/app/app.component.ts",
-          "hash": "7549992441171846081",
+          "hash": "16558409195121784276",
           "deps": [
             "npm:@tinkoff/ng-dompurify",
             "npm:@angular/core",
@@ -210,7 +210,6 @@
             "npm:@taiga-ui/core",
             "npm:@taiga-ui/kit",
             "npm:@taiga-ui/cdk",
-            "npm:rxjs",
             "npm:flowbite"
           ]
         },
@@ -224,7 +223,7 @@
         },
         {
           "file": "src/app/app.config.ts",
-          "hash": "3811136196228952625",
+          "hash": "9710581623968564990",
           "deps": [
             "npm:@angular/platform-browser",
             "npm:@taiga-ui/core",
@@ -235,30 +234,89 @@
         },
         {
           "file": "src/app/app.module.ts",
-          "hash": "12935320947182934802",
+          "hash": "1111825121123120301",
           "deps": [
             "npm:@angular/core",
-            "npm:@angular/common"
+            "npm:@angular/common",
+            "npm:@tinkoff/ng-dompurify",
+            "npm:@taiga-ui/core",
+            "npm:@taiga-ui/kit",
+            "npm:@angular/forms",
+            "npm:@taiga-ui/cdk"
           ]
         },
         {
           "file": "src/app/app.routes.ts",
-          "hash": "8323720091929142558",
+          "hash": "18184362568844590552",
           "deps": [
             "npm:@angular/router"
           ]
         },
         {
+          "file": "src/app/components/add-member/add-member.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/components/add-member/add-member.component.html",
+          "hash": "497206925897295315"
+        },
+        {
+          "file": "src/app/components/add-member/add-member.component.spec.ts",
+          "hash": "1523823055178333841",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/components/add-member/add-member.component.ts",
+          "hash": "3999120039067371212",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@taiga-ui/kit",
+            "npm:@taiga-ui/core"
+          ]
+        },
+        {
+          "file": "src/app/components/member-table/member-table.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/components/member-table/member-table.component.html",
+          "hash": "15164318698579222609"
+        },
+        {
+          "file": "src/app/components/member-table/member-table.component.spec.ts",
+          "hash": "13034958084947943061",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/components/member-table/member-table.component.ts",
+          "hash": "7096216923721271981",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/router",
+            "npm:@taiga-ui/cdk",
+            "npm:@taiga-ui/core",
+            "npm:@taiga-ui/kit",
+            "npm:@tinkoff/ng-polymorpheus",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "src/app/config/api.ts",
+          "hash": "4688943991262507105"
+        },
+        {
           "file": "src/app/core/enum/gender.ts",
-          "hash": "13873426417015308140"
+          "hash": "5327399841726481061"
         },
         {
           "file": "src/app/core/enum/identity-document-type.ts",
           "hash": "3170700787539173391"
-        },
-        {
-          "file": "src/app/core/enum/sex.ts",
-          "hash": "18388770353028905089"
         },
         {
           "file": "src/app/core/interceptors/auth-interceptor.interceptor.spec.ts",
@@ -332,7 +390,11 @@
         },
         {
           "file": "src/app/core/model/member.ts",
-          "hash": "11367027321663060899"
+          "hash": "5452640857544879264"
+        },
+        {
+          "file": "src/app/core/model/pagination.ts",
+          "hash": "14996153843091577549"
         },
         {
           "file": "src/app/core/model/ranking.ts",
@@ -341,13 +403,6 @@
         {
           "file": "src/app/core/model/register-request.ts",
           "hash": "17711880082477028081"
-        },
-        {
-          "file": "src/app/core/services/authentication.service.spec.ts",
-          "hash": "9336182511222613820",
-          "deps": [
-            "npm:@angular/core"
-          ]
         },
         {
           "file": "src/app/core/services/authentication.service.ts",
@@ -359,8 +414,45 @@
           ]
         },
         {
-          "file": "src/app/core/services/routing.service.spec.ts",
-          "hash": "2143361993576471175",
+          "file": "src/app/core/services/competition.service.ts",
+          "hash": "141349044013003155",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/core/services/fish.service.ts",
+          "hash": "14504371621569115000",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/core/services/hunting.service.ts",
+          "hash": "5038628312528712955",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/core/services/level.service.ts",
+          "hash": "5318680758072333233",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/core/services/member.service.ts",
+          "hash": "176848325974398978",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "src/app/core/services/ranking.service.ts",
+          "hash": "5369856856815212112",
           "deps": [
             "npm:@angular/core"
           ]
@@ -371,13 +463,6 @@
           "deps": [
             "npm:@angular/core",
             "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "src/app/core/services/token-storage.service.spec.ts",
-          "hash": "5315810637853388495",
-          "deps": [
-            "npm:@angular/core"
           ]
         },
         {
@@ -394,7 +479,7 @@
         },
         {
           "file": "src/app/features/competition/competition.component.html",
-          "hash": "9130768717583677548"
+          "hash": "6202964843921849626"
         },
         {
           "file": "src/app/features/competition/competition.component.spec.ts",
@@ -405,7 +490,29 @@
         },
         {
           "file": "src/app/features/competition/competition.component.ts",
-          "hash": "7545614773111139152",
+          "hash": "2688906237737224456",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/features/member/member.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/features/member/member.component.html",
+          "hash": "9379091007547907165"
+        },
+        {
+          "file": "src/app/features/member/member.component.spec.ts",
+          "hash": "17718937743226260026",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/features/member/member.component.ts",
+          "hash": "7042988449065727638",
           "deps": [
             "npm:@angular/core"
           ]
@@ -416,7 +523,7 @@
         },
         {
           "file": "src/app/layout/admin-layout/admin-layout.component.html",
-          "hash": "12360746749707865315"
+          "hash": "17403300205830189418"
         },
         {
           "file": "src/app/layout/admin-layout/admin-layout.component.spec.ts",
@@ -427,7 +534,7 @@
         },
         {
           "file": "src/app/layout/admin-layout/admin-layout.component.ts",
-          "hash": "16763428883079180454",
+          "hash": "14908478980206902278",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/router",
@@ -437,6 +544,28 @@
             "npm:rxjs",
             "npm:flowbite",
             "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "src/app/shared/drip-drop-animation/drip-drop-animation.component.css",
+          "hash": "7831782109177521228"
+        },
+        {
+          "file": "src/app/shared/drip-drop-animation/drip-drop-animation.component.html",
+          "hash": "5065112270509248413"
+        },
+        {
+          "file": "src/app/shared/drip-drop-animation/drip-drop-animation.component.spec.ts",
+          "hash": "6020788553739913401",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/shared/drip-drop-animation/drip-drop-animation.component.ts",
+          "hash": "2439461897100211511",
+          "deps": [
+            "npm:@angular/core"
           ]
         },
         {
@@ -486,8 +615,30 @@
           ]
         },
         {
+          "file": "src/app/shared/ocean/ocean.component.css",
+          "hash": "6604383588813079867"
+        },
+        {
+          "file": "src/app/shared/ocean/ocean.component.html",
+          "hash": "6204128518278247163"
+        },
+        {
+          "file": "src/app/shared/ocean/ocean.component.spec.ts",
+          "hash": "5467706104114065433",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/shared/ocean/ocean.component.ts",
+          "hash": "31901698744768568",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
           "file": "src/app/shared/side-bar/side-bar.component.html",
-          "hash": "4581718005907163687"
+          "hash": "17771497735834640703"
         },
         {
           "file": "src/app/shared/side-bar/side-bar.component.spec.ts",
@@ -503,6 +654,61 @@
             "npm:@angular/core",
             "npm:@angular/common"
           ]
+        },
+        {
+          "file": "src/app/shared/table-skeleton/table-skeleton.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/shared/table-skeleton/table-skeleton.component.html",
+          "hash": "1688850102874815333"
+        },
+        {
+          "file": "src/app/shared/table-skeleton/table-skeleton.component.spec.ts",
+          "hash": "6911161848540332686",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/shared/table-skeleton/table-skeleton.component.ts",
+          "hash": "7057136569742952776",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/forms",
+            "npm:@taiga-ui/kit"
+          ]
+        },
+        {
+          "file": "src/app/shared/waves/waves.component.css",
+          "hash": "6932217387440880466"
+        },
+        {
+          "file": "src/app/shared/waves/waves.component.html",
+          "hash": "6800137612633880482"
+        },
+        {
+          "file": "src/app/shared/waves/waves.component.spec.ts",
+          "hash": "14027804434516565342",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/shared/waves/waves.component.ts",
+          "hash": "7600671032805505918",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/utils/range.spec.ts",
+          "hash": "13245769585589107745"
+        },
+        {
+          "file": "src/app/utils/range.ts",
+          "hash": "13495094308342284697"
         },
         {
           "file": "src/assets/.gitkeep",
@@ -532,11 +738,11 @@
         },
         {
           "file": "src/styles.css",
-          "hash": "4172455473544633436"
+          "hash": "3350588047743758182"
         },
         {
           "file": "tailwind.config.js",
-          "hash": "568475668406747911",
+          "hash": "11027674288116240348",
           "deps": [
             "npm:tailwind-scrollbar",
             "npm:flowbite",

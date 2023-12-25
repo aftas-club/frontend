@@ -17,7 +17,7 @@ export const routes: Routes = [
   },
   {
     path: 'competitions',
-    component: CompetitionComponent
+    component: CompetitionComponent,
   },
   {
     path: 'competition/details/:id',

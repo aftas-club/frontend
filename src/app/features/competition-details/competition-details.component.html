@@ -1,6 +1,139 @@
 <app-admin-layout>
   <ng-container class="lg:p-6">
-    gggg
+    <tui-loader
+      style="max-height:calc(100vh - 138px);"
+      class="inline-flex h-full max-h-[calc(100vh - 105px)] overflow-y-auto rounded-3xl shadow-sm-light bg-white dark:bg-gray-800 mt-4"
+      [showLoader]="false"
+    >
+      <div class="flex flex-col pt-10 pb-0 p-5 h-full">
+        <div class="z-30">
+          <div class="mb-5 flex flex-wrap justify-between">
+            <h1 class="text-2xl ml-6">Competition Détail :</h1>
+            <button (click)="showDialog()"
+                    class="bg-[#7bbcd1] hover:bg-[#295e6e] dark:bg-[#295e6e] dark:hover:bg-[#7bbcd1] border-none py-2.5 px-5 me-2 mb-2 text-sm font-medium text-white rounded-lg border border-gray-200 focus:z-10">
+              Show Ranking
+            </button>
+          </div>
+          <section class="container flex flex-col h-full w-full relative px-4 mx-auto z-30">
+            <div
+              class="-mx-4 -my-2 overflow-x-auto scrollbar scrollbar-thumb-gray-200 scrollbar-track-gray-transparent sm:-mx-6 lg:-mx-8">
+              <div class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
+                <div class="overflow-hidden dark:border-gray-700 md:rounded-lg">
+                  <tui-tabs [(activeItemIndex)]="activeItemIndex">
+                    <button
+                      tuiTab
+                      (click)="activeItem('Detail')"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" class="tui-space_right-2" width="24" height="24"
+                           viewBox="0 0 24 24">
+                        <path
+                          d="M20 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zM4 19V5h16l.002 14H4z"></path>
+                        <path d="M6 7h12v2H6zm0 4h12v2H6zm0 4h6v2H6z"></path>
+                      </svg>
+                      Detail
+                    </button>
+                    <button
+                      tuiTab
+                      (click)="activeItem('Members')"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" class="tui-space_right-2" width="24" height="24"
+                           viewBox="0 0 24 24">
+                        <circle cx="12" cy="7.5" r="1.5"></circle>
+                        <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path>
+                        <path
+                          d="M16.5 10.5 16 9l-3 1h-2L8 9l-.5 1.5 3 1V13L9 17.25l1.5.75 1.25-3.5h.5L13.5 18l1.5-.75L13.5 13v-1.5l3-1z"></path>
+                      </svg>
+                      Members
+                    </button>
+                    <button
+                      tuiTab
+                      (click)="activeItem('Hunting')"
+                    >
+                      <img width="30" height="30" class="tui-space_right-2"
+                           ngSrc="https://img.icons8.com/ios/50/fish--v1.png" alt="fish--v1"/>
+                      Hunting
+                    </button>
+                  </tui-tabs>
+
+
+                  <div class="h-full w-full mt-10">
+                    <div class="z-30" *ngIf="displayElement === 'Detail'">
+                      <div class="flex flex-col bg-gray-100 h-full w-full dark:bg-gray-800 p-6 rounded-3xl">
+                        <h2 class="text-2xl font-bold mb-4 h-full w-full">Competition Details :</h2>
+                        <div class="grid grid-cols-2 gap-4">
+                          <div class="mb-2">
+                            <label class="text-gray-600 dark:text-white">Code:</label>
+                            <div class="text-lg">{{ Competition.code }}</div>
+                          </div>
+                          <div class="mb-2">
+                            <label class="text-gray-600 dark:text-white">Title:</label>
+                            <div class="text-lg">{{ Competition.title }}</div>
+                          </div>
+                          <div class="mb-2">
+                            <label class="text-gray-600 dark:text-white">Address:</label>
+                            <div class="text-lg" *ngIf="Competition?.address">{{ Address(Competition.address) }}</div>
+                          </div>
+                          <div class="mb-2">
+                            <label class="text-gray-600 dark:text-white">Date:</label>
+                            <div class="text-lg">{{ Competition.date }}</div>
+                          </div>
+                          <div class="mb-2">
+                            <label class="text-gray-600 dark:text-white">Start Time:</label>
+                            <div class="text-lg">{{ Competition.startTime }}</div>
+                          </div>
+                          <div class="mb-2">
+                            <label class="text-gray-600 dark:text-white">End Time:</label>
+                            <div class="text-lg">{{ Competition.endTime }}</div>
+                          </div>
+                          <div class="mb-2">
+                            <label class="text-gray-600 dark:text-white">Participants:</label>
+                            <div class="text-lg">{{ Competition.numberOfParticipants }}</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="z-30" *ngIf="displayElement === 'Members'">
+                      <div class="flex flex-wrap justify-center gap-16">
+                        <div class="w-full max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+                          <img class="object-cover w-full h-56" src="https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="avatar">
+
+                          <div class="py-5 text-center">
+                            <a href="#" class="block text-xl font-bold text-gray-800 dark:text-white" tabindex="0" role="link">John Doe</a>
+                            <span class="text-sm text-gray-700 dark:text-gray-200">Software Engineer</span>
+                          </div>
+                        </div>
+                        <div class="w-full max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+                          <img class="object-cover w-full h-56" src="https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="avatar">
+
+                          <div class="py-5 text-center">
+                            <a href="#" class="block text-xl font-bold text-gray-800 dark:text-white" tabindex="0" role="link">John Doe</a>
+                            <span class="text-sm text-gray-700 dark:text-gray-200">Software Engineer</span>
+                          </div>
+                        </div>
+                        <div class="w-full max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+                          <img class="object-cover w-full h-56" src="https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="avatar">
+
+                          <div class="py-5 text-center">
+                            <a href="#" class="block text-xl font-bold text-gray-800 dark:text-white" tabindex="0" role="link">John Doe</a>
+                            <span class="text-sm text-gray-700 dark:text-gray-200">Software Engineer</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="z-30" *ngIf="displayElement === 'Hunting'">
+                      Hunting
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <app-ocean class="opacity-40 absolute top-0 w-full h-full left-0 z-0"></app-ocean>
+        <app-waves
+          class="opacity-[0.07] dark:opacity-[0.01] absolute bottom-0 w-full left-0 z-0 rounded-3xl"></app-waves>
+      </div>
+    </tui-loader>
   </ng-container>
 </app-admin-layout>
-

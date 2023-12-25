@@ -296,6 +296,15 @@
         "hash": "sha512-d91Rre/NK+SgamF1OJmDJUx+Zs8M7qFmrKu7c+hNsXPe8J/fkMNoWFikne/WSsegwY929E1xpeqvu/KXQt90ug=="
       }
     },
+    "npm:@angular/google-maps": {
+      "type": "npm",
+      "name": "npm:@angular/google-maps",
+      "data": {
+        "version": "17.0.4",
+        "packageName": "@angular/google-maps",
+        "hash": "sha512-b5oMvLbYk6YLA2UNp8RkKm3KkAeflIbA2rgHEdkWdszCQc93tE6WKD2RlvuRKcvOxo+7BwAmXe4Ylmm2xO53Ww=="
+      }
+    },
     "npm:@angular/platform-browser": {
       "type": "npm",
       "name": "npm:@angular/platform-browser",
@@ -1448,6 +1457,78 @@
         "hash": "sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw=="
       }
     },
+    "npm:@cloudinary/html": {
+      "type": "npm",
+      "name": "npm:@cloudinary/html",
+      "data": {
+        "version": "1.11.2",
+        "packageName": "@cloudinary/html",
+        "hash": "sha512-IibBZliI7MOK3dxvz0WlsEyTIsqZhY3SiCBQM0CNwCKxn3N1TO8OgetfU26Now1lJbdoF5JQ8S7Cn6ZWNuU1KA=="
+      }
+    },
+    "npm:@types/node@14.18.63": {
+      "type": "npm",
+      "name": "npm:@types/node@14.18.63",
+      "data": {
+        "version": "14.18.63",
+        "packageName": "@types/node",
+        "hash": "sha512-fAtCfv4jJg+ExtXhvCkCqUKZ+4ok/JQk01qDKhL5BDDoS3AxKXhV5/MAVUZyQnSEd2GT92fkgZl0pz0Q0AzcIQ=="
+      }
+    },
+    "npm:@types/node": {
+      "type": "npm",
+      "name": "npm:@types/node",
+      "data": {
+        "version": "18.19.2",
+        "packageName": "@types/node",
+        "hash": "sha512-6wzfBdbWpe8QykUkXBjtmO3zITA0A3FIjoy+in0Y2K4KrCiRhNYJIdwAPDffZ3G6GnaKaSLSEa9ZuORLfEoiwg=="
+      }
+    },
+    "npm:typescript@4.9.5": {
+      "type": "npm",
+      "name": "npm:typescript@4.9.5",
+      "data": {
+        "version": "4.9.5",
+        "packageName": "typescript",
+        "hash": "sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g=="
+      }
+    },
+    "npm:typescript": {
+      "type": "npm",
+      "name": "npm:typescript",
+      "data": {
+        "version": "5.2.2",
+        "packageName": "typescript",
+        "hash": "sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w=="
+      }
+    },
+    "npm:@cloudinary/ng": {
+      "type": "npm",
+      "name": "npm:@cloudinary/ng",
+      "data": {
+        "version": "2.0.0",
+        "packageName": "@cloudinary/ng",
+        "hash": "sha512-Wpjg9LFPG6ZZFqxHLGFbACM5JaCKfTE3ZoEbFrKf3wGutqz2Psugx3GvxChUncQtt9YEr1ol6HgrK9fTyfloNQ=="
+      }
+    },
+    "npm:@cloudinary/transformation-builder-sdk": {
+      "type": "npm",
+      "name": "npm:@cloudinary/transformation-builder-sdk",
+      "data": {
+        "version": "1.10.0",
+        "packageName": "@cloudinary/transformation-builder-sdk",
+        "hash": "sha512-T8evZcLOgvcrBS6bVLseZPGL/BXLReRn+DbbBnKj7yTuJ9ppZ+8EFXpZn7c0Bb2hZz6C/0mC4B5fxKfgTPzDsw=="
+      }
+    },
+    "npm:@cloudinary/url-gen": {
+      "type": "npm",
+      "name": "npm:@cloudinary/url-gen",
+      "data": {
+        "version": "1.14.0",
+        "packageName": "@cloudinary/url-gen",
+        "hash": "sha512-XbG8QgD5fkTUO/YYUWftfz3sUpKzRZJkXhp6xLSxmK/36iyMy2wA4SF5FLCOnv6fLLUneQzXbc4OAwaDM0EWCQ=="
+      }
+    },
     "npm:@colors/colors": {
       "type": "npm",
       "name": "npm:@colors/colors",
@@ -1952,13 +2033,13 @@
         "hash": "sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg=="
       }
     },
-    "npm:globals@13.23.0": {
+    "npm:globals@13.24.0": {
       "type": "npm",
-      "name": "npm:globals@13.23.0",
+      "name": "npm:globals@13.24.0",
       "data": {
-        "version": "13.23.0",
+        "version": "13.24.0",
         "packageName": "globals",
-        "hash": "sha512-XAmF0RjlrjY23MA51q3HltdlGxUpXPvg0GioKiD9X6HD28iMjo2dKC8Vqwm7lne4GNr78+RHTfliktR6ZH09wA=="
+        "hash": "sha512-AhO5QUcj8llrbG09iWhPU2B204J1xnPeL8kQmVorSsy+Sjj1sk8gIyh6cUocGmH4L0UuhAJy+hJMRA4mgA4mFQ=="
       }
     },
     "npm:globals": {
@@ -2028,9 +2109,9 @@
       "type": "npm",
       "name": "npm:@eslint/js",
       "data": {
-        "version": "8.55.0",
+        "version": "8.56.0",
         "packageName": "@eslint/js",
-        "hash": "sha512-qQfo2mxH5yVom1kacMtZZJFVdW+E70mqHMJvVg6WTLo+VBuQJ4TojZlfWBjK0ve5BdEeNAVxOsl/nvNMpJOaJA=="
+        "hash": "sha512-gMsVel9D7f2HLkBma9VbtzZRehRogVRfbr++f06nL2vnCGCNlzOD+/MUov/F4p8myyAHspEhVobgjpX64q5m6A=="
       }
     },
     "npm:@fastify/busboy": {
@@ -4229,6 +4310,15 @@
         "hash": "sha512-OaJ7XLaelTgrvlZD8/aa0vvvxZdUmlCn6MtWeB7TkiKW70BQLc9XEPpDLPdbo52ZhXUCrznlWdCHWxJWtdyajA=="
       }
     },
+    "npm:@types/google.maps": {
+      "type": "npm",
+      "name": "npm:@types/google.maps",
+      "data": {
+        "version": "3.54.10",
+        "packageName": "@types/google.maps",
+        "hash": "sha512-N6gwM01mKhooXaw+IKbUH7wJcIJCn8U60VoaVvom5EiQjmfgevhQ+0+/r17beXW5j8ad2x+WPr0iyOUodCw4/w=="
+      }
+    },
     "npm:@types/graceful-fs": {
       "type": "npm",
       "name": "npm:@types/graceful-fs",
@@ -4301,6 +4391,33 @@
         "hash": "sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA=="
       }
     },
+    "npm:@types/lodash": {
+      "type": "npm",
+      "name": "npm:@types/lodash",
+      "data": {
+        "version": "4.14.202",
+        "packageName": "@types/lodash",
+        "hash": "sha512-OvlIYQK9tNneDlS0VN54LLd5uiPCBOp7gS5Z0f1mjoJYBrtStzgmJBxONW3U6OZqdtNzZPmn9BS/7WI7BFFcFQ=="
+      }
+    },
+    "npm:@types/lodash.clonedeep": {
+      "type": "npm",
+      "name": "npm:@types/lodash.clonedeep",
+      "data": {
+        "version": "4.5.9",
+        "packageName": "@types/lodash.clonedeep",
+        "hash": "sha512-19429mWC+FyaAhOLzsS8kZUsI+/GmBAQ0HFiCPsKGU+7pBXOQWhyrY6xNNDwUSX8SMZMJvuFVMF9O5dQOlQK9Q=="
+      }
+    },
+    "npm:@types/lodash.debounce": {
+      "type": "npm",
+      "name": "npm:@types/lodash.debounce",
+      "data": {
+        "version": "4.0.9",
+        "packageName": "@types/lodash.debounce",
+        "hash": "sha512-Ma5JcgTREwpLRwMM+XwBR7DaWe96nC38uCBDFKZWbNKD+osjVzdpnUSwBcqCptrp16sSOLBAUb50Car5I0TCsQ=="
+      }
+    },
     "npm:@types/mime": {
       "type": "npm",
       "name": "npm:@types/mime",
@@ -4317,15 +4434,6 @@
         "version": "3.0.5",
         "packageName": "@types/minimatch",
         "hash": "sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ=="
-      }
-    },
-    "npm:@types/node": {
-      "type": "npm",
-      "name": "npm:@types/node",
-      "data": {
-        "version": "18.19.2",
-        "packageName": "@types/node",
-        "hash": "sha512-6wzfBdbWpe8QykUkXBjtmO3zITA0A3FIjoy+in0Y2K4KrCiRhNYJIdwAPDffZ3G6GnaKaSLSEa9ZuORLfEoiwg=="
       }
     },
     "npm:@types/node-forge": {
@@ -6762,9 +6870,9 @@
       "type": "npm",
       "name": "npm:eslint",
       "data": {
-        "version": "8.55.0",
+        "version": "8.56.0",
         "packageName": "eslint",
-        "hash": "sha512-iyUUAM0PCKj5QpwGfmCAG9XXbZCWsqP/eWAWrG/W0umvjuLRBECwSFdt+rCntju0xEH7teIABPwXpahftIaTdA=="
+        "hash": "sha512-Go19xM6T9puCOWntie1/P997aXxFsOi37JIHRWI514Hc6ZnaHGKY9xFhrU65RT6CcBEzZoGG1e6Nq+DT04ZtZQ=="
       }
     },
     "npm:eslint-scope": {
@@ -8952,6 +9060,15 @@
         "version": "4.17.21",
         "packageName": "lodash-es",
         "hash": "sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw=="
+      }
+    },
+    "npm:lodash.clonedeep": {
+      "type": "npm",
+      "name": "npm:lodash.clonedeep",
+      "data": {
+        "version": "4.5.0",
+        "packageName": "lodash.clonedeep",
+        "hash": "sha512-H5ZhCF25riFd9uB5UCkVKo61m3S/xZk1x4wA6yp/L3RFP6Z/eHH1ymQcGLo7J3GMPfm0V/7m1tryHuGVxpqEBQ=="
       }
     },
     "npm:lodash.debounce": {
@@ -11510,15 +11627,6 @@
         "hash": "sha512-KNNZtayBCtmnNmbo5mG47p1XsCyrx6iVqomjcZnec/1Y5GGARaxPs6r49RnSPeUP3YjNYiU9sQHAtY4BBvnZwg=="
       }
     },
-    "npm:typescript": {
-      "type": "npm",
-      "name": "npm:typescript",
-      "data": {
-        "version": "5.2.2",
-        "packageName": "typescript",
-        "hash": "sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w=="
-      }
-    },
     "npm:uc.micro": {
       "type": "npm",
       "name": "npm:uc.micro",
@@ -12013,6 +12121,11 @@
       },
       {
         "source": "market",
+        "target": "npm:@angular/google-maps",
+        "type": "static"
+      },
+      {
+        "source": "market",
         "target": "npm:@angular/platform-browser",
         "type": "static"
       },
@@ -12034,6 +12147,16 @@
       {
         "source": "market",
         "target": "npm:@angular/ssr",
+        "type": "static"
+      },
+      {
+        "source": "market",
+        "target": "npm:@cloudinary/ng",
+        "type": "static"
+      },
+      {
+        "source": "market",
+        "target": "npm:@cloudinary/url-gen",
         "type": "static"
       },
       {
@@ -12259,6 +12382,11 @@
       {
         "source": "market",
         "target": "npm:@tinkoff/ng-polymorpheus",
+        "type": "static"
+      },
+      {
+        "source": "market",
+        "target": "npm:@maskito/angular",
         "type": "static"
       }
     ],
@@ -12998,6 +13126,33 @@
       },
       {
         "source": "npm:@angular/forms",
+        "target": "npm:tslib",
+        "type": "static"
+      }
+    ],
+    "npm:@angular/google-maps": [
+      {
+        "source": "npm:@angular/google-maps",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/google-maps",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/google-maps",
+        "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/google-maps",
+        "target": "npm:@types/google.maps",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/google-maps",
         "target": "npm:tslib",
         "type": "static"
       }
@@ -15401,6 +15556,74 @@
         "type": "static"
       }
     ],
+    "npm:@cloudinary/html": [
+      {
+        "source": "npm:@cloudinary/html",
+        "target": "npm:@types/lodash.clonedeep",
+        "type": "static"
+      },
+      {
+        "source": "npm:@cloudinary/html",
+        "target": "npm:@types/lodash.debounce",
+        "type": "static"
+      },
+      {
+        "source": "npm:@cloudinary/html",
+        "target": "npm:@types/node@14.18.63",
+        "type": "static"
+      },
+      {
+        "source": "npm:@cloudinary/html",
+        "target": "npm:lodash.clonedeep",
+        "type": "static"
+      },
+      {
+        "source": "npm:@cloudinary/html",
+        "target": "npm:lodash.debounce",
+        "type": "static"
+      },
+      {
+        "source": "npm:@cloudinary/html",
+        "target": "npm:typescript@4.9.5",
+        "type": "static"
+      }
+    ],
+    "npm:@cloudinary/ng": [
+      {
+        "source": "npm:@cloudinary/ng",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "npm:@cloudinary/ng",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "npm:@cloudinary/ng",
+        "target": "npm:@cloudinary/html",
+        "type": "static"
+      },
+      {
+        "source": "npm:@cloudinary/ng",
+        "target": "npm:tslib",
+        "type": "static"
+      }
+    ],
+    "npm:@cloudinary/transformation-builder-sdk": [
+      {
+        "source": "npm:@cloudinary/transformation-builder-sdk",
+        "target": "npm:@cloudinary/url-gen",
+        "type": "static"
+      }
+    ],
+    "npm:@cloudinary/url-gen": [
+      {
+        "source": "npm:@cloudinary/url-gen",
+        "target": "npm:@cloudinary/transformation-builder-sdk",
+        "type": "static"
+      }
+    ],
     "npm:@cspotcode/source-map-support": [
       {
         "source": "npm:@cspotcode/source-map-support",
@@ -15450,7 +15673,7 @@
       },
       {
         "source": "npm:@eslint/eslintrc",
-        "target": "npm:globals@13.23.0",
+        "target": "npm:globals@13.24.0",
         "type": "static"
       },
       {
@@ -15501,9 +15724,9 @@
         "type": "static"
       }
     ],
-    "npm:globals@13.23.0": [
+    "npm:globals@13.24.0": [
       {
-        "source": "npm:globals@13.23.0",
+        "source": "npm:globals@13.24.0",
         "target": "npm:type-fest@0.20.2",
         "type": "static"
       }
@@ -18804,6 +19027,20 @@
         "type": "static"
       }
     ],
+    "npm:@types/lodash.clonedeep": [
+      {
+        "source": "npm:@types/lodash.clonedeep",
+        "target": "npm:@types/lodash",
+        "type": "static"
+      }
+    ],
+    "npm:@types/lodash.debounce": [
+      {
+        "source": "npm:@types/lodash.debounce",
+        "target": "npm:@types/lodash",
+        "type": "static"
+      }
+    ],
     "npm:@types/node": [
       {
         "source": "npm:@types/node",
@@ -21543,7 +21780,7 @@
       },
       {
         "source": "npm:eslint",
-        "target": "npm:globals@13.23.0",
+        "target": "npm:globals@13.24.0",
         "type": "static"
       },
       {

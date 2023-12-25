@@ -24,7 +24,12 @@ export class CompetitionService {
       .get<Pagination<Competition>>(this.apiUrl, {params});
   }
 
+  getCompetition(id: string): Observable<Competition> {
+    return this.http.get<Competition>(this.apiUrl + '/' + id);
+  }
+
   createCompetition(competition: Competition): Observable<Competition> {
     return this.http.post<Competition>(this.apiUrl, competition);
   }
+
 }

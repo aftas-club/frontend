@@ -8,11 +8,14 @@
     "@angular/compiler": "^17.0.0",
     "@angular/core": "^17.0.0",
     "@angular/forms": "^17.0.0",
+    "@angular/google-maps": "^17.0.4",
     "@angular/platform-browser": "^17.0.0",
     "@angular/platform-browser-dynamic": "^17.0.0",
     "@angular/platform-server": "^17.0.0",
     "@angular/router": "^17.0.0",
     "@angular/ssr": "^17.0.5",
+    "@cloudinary/ng": "^2.0.0",
+    "@cloudinary/url-gen": "^1.14.0",
     "@nrwl/angular": "^17.1.3",
     "@taiga-ui/addon-charts": "^3.56.0",
     "@taiga-ui/addon-commerce": "^3.56.0",
@@ -73,19 +76,19 @@
         },
         {
           "file": ".nx/cache/file-map.json",
-          "hash": "16718207208688323467"
+          "hash": "1002972549672637242"
         },
         {
           "file": ".nx/cache/lockfile.hash",
-          "hash": "15157918025413088484"
+          "hash": "3660168446923525600"
         },
         {
           "file": ".nx/cache/parsed-lock-file.json",
-          "hash": "11899602193582802414"
+          "hash": "9934399703087752781"
         },
         {
           "file": ".nx/cache/project-graph.json",
-          "hash": "10683017068537371891"
+          "hash": "5897278726613525412"
         },
         {
           "file": ".vscode/extensions.json",
@@ -109,11 +112,11 @@
         },
         {
           "file": "package-lock.json",
-          "hash": "16538655283192737546"
+          "hash": "17049785503185383769"
         },
         {
           "file": "package.json",
-          "hash": "14080771807716676955",
+          "hash": "14953642263138874914",
           "deps": [
             "npm:@angular/animations",
             "npm:@angular/cdk",
@@ -121,11 +124,14 @@
             "npm:@angular/compiler",
             "npm:@angular/core",
             "npm:@angular/forms",
+            "npm:@angular/google-maps",
             "npm:@angular/platform-browser",
             "npm:@angular/platform-browser-dynamic",
             "npm:@angular/platform-server",
             "npm:@angular/router",
             "npm:@angular/ssr",
+            "npm:@cloudinary/ng",
+            "npm:@cloudinary/url-gen",
             "npm:@nrwl/angular",
             "npm:@taiga-ui/addon-charts",
             "npm:@taiga-ui/addon-commerce",
@@ -185,7 +191,7 @@
         },
         {
           "file": "src/app/app.component.css",
-          "hash": "3244421341483603138"
+          "hash": "8862820801399748170"
         },
         {
           "file": "src/app/app.component.html",
@@ -223,10 +229,9 @@
         },
         {
           "file": "src/app/app.config.ts",
-          "hash": "9710581623968564990",
+          "hash": "4837379875809354320",
           "deps": [
             "npm:@angular/platform-browser",
-            "npm:@taiga-ui/core",
             "npm:@angular/core",
             "npm:@angular/router",
             "npm:@angular/common"
@@ -234,22 +239,51 @@
         },
         {
           "file": "src/app/app.module.ts",
-          "hash": "1111825121123120301",
+          "hash": "5269763747001076409",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common",
             "npm:@tinkoff/ng-dompurify",
+            "npm:@cloudinary/ng",
             "npm:@taiga-ui/core",
-            "npm:@taiga-ui/kit",
-            "npm:@angular/forms",
-            "npm:@taiga-ui/cdk"
+            "npm:@angular/google-maps"
           ]
         },
         {
           "file": "src/app/app.routes.ts",
-          "hash": "18184362568844590552",
+          "hash": "2509640883574432174",
           "deps": [
             "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/components/add-competition/add-competition.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/components/add-competition/add-competition.component.html",
+          "hash": "9964855115635390099"
+        },
+        {
+          "file": "src/app/components/add-competition/add-competition.component.spec.ts",
+          "hash": "4216315419362233643",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/components/add-competition/add-competition.component.ts",
+          "hash": "1435279355628991975",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@taiga-ui/core",
+            "npm:@taiga-ui/kit",
+            "npm:@taiga-ui/addon-commerce",
+            "npm:@angular/google-maps",
+            "npm:@angular/common",
+            "npm:@angular/forms",
+            "npm:@tinkoff/ng-polymorpheus",
+            "npm:@taiga-ui/cdk"
           ]
         },
         {
@@ -258,7 +292,7 @@
         },
         {
           "file": "src/app/components/add-member/add-member.component.html",
-          "hash": "497206925897295315"
+          "hash": "5247051766834913431"
         },
         {
           "file": "src/app/components/add-member/add-member.component.spec.ts",
@@ -269,21 +303,53 @@
         },
         {
           "file": "src/app/components/add-member/add-member.component.ts",
-          "hash": "3999120039067371212",
+          "hash": "13683234111232063366",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/forms",
             "npm:@taiga-ui/kit",
-            "npm:@taiga-ui/core"
+            "npm:@taiga-ui/core",
+            "npm:rxjs",
+            "npm:@tinkoff/ng-polymorpheus",
+            "npm:@angular/common",
+            "npm:@taiga-ui/cdk",
+            "npm:@cloudinary/url-gen"
+          ]
+        },
+        {
+          "file": "src/app/components/competition-list/competition-list.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/components/competition-list/competition-list.component.html",
+          "hash": "14420343476690931777"
+        },
+        {
+          "file": "src/app/components/competition-list/competition-list.component.spec.ts",
+          "hash": "2519045830076677069",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/components/competition-list/competition-list.component.ts",
+          "hash": "18403437243962989478",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@taiga-ui/core",
+            "npm:@angular/common",
+            "npm:@angular/router",
+            "npm:rxjs",
+            "npm:@tinkoff/ng-polymorpheus"
           ]
         },
         {
           "file": "src/app/components/member-table/member-table.component.css",
-          "hash": "3244421341483603138"
+          "hash": "15036214574332298676"
         },
         {
           "file": "src/app/components/member-table/member-table.component.html",
-          "hash": "15164318698579222609"
+          "hash": "1480619233541704143"
         },
         {
           "file": "src/app/components/member-table/member-table.component.spec.ts",
@@ -294,7 +360,7 @@
         },
         {
           "file": "src/app/components/member-table/member-table.component.ts",
-          "hash": "7096216923721271981",
+          "hash": "264089124746164249",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common",
@@ -303,7 +369,52 @@
             "npm:@taiga-ui/core",
             "npm:@taiga-ui/kit",
             "npm:@tinkoff/ng-polymorpheus",
-            "npm:@angular/forms"
+            "npm:@angular/forms",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "src/app/components/ranking/ranking.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/components/ranking/ranking.component.html",
+          "hash": "1068115134106837238"
+        },
+        {
+          "file": "src/app/components/ranking/ranking.component.spec.ts",
+          "hash": "7574292578472937779",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/components/ranking/ranking.component.ts",
+          "hash": "14192469434638618386",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/config/all-taiga-modules.ts",
+          "hash": "12247767394207539382",
+          "deps": [
+            "npm:@taiga-ui/cdk",
+            "npm:@taiga-ui/core",
+            "npm:@taiga-ui/kit",
+            "npm:@taiga-ui/addon-charts",
+            "npm:@taiga-ui/addon-commerce",
+            "npm:@taiga-ui/addon-mobile",
+            "npm:@taiga-ui/addon-preview",
+            "npm:@taiga-ui/addon-table",
+            "npm:@taiga-ui/addon-tablebars",
+            "npm:@angular/cdk",
+            "npm:@angular/common",
+            "npm:@angular/forms",
+            "npm:@angular/router",
+            "npm:@angular/platform-browser",
+            "npm:@maskito/angular",
+            "npm:@tinkoff/ng-polymorpheus"
           ]
         },
         {
@@ -311,12 +422,20 @@
           "hash": "4688943991262507105"
         },
         {
+          "file": "src/app/config/cloudinary.ts",
+          "hash": "631974681736830477"
+        },
+        {
+          "file": "src/app/core/enum/competition-status.ts",
+          "hash": "2156398905979042034"
+        },
+        {
           "file": "src/app/core/enum/gender.ts",
           "hash": "5327399841726481061"
         },
         {
           "file": "src/app/core/enum/identity-document-type.ts",
-          "hash": "3170700787539173391"
+          "hash": "7157873032406409756"
         },
         {
           "file": "src/app/core/interceptors/auth-interceptor.interceptor.spec.ts",
@@ -352,7 +471,7 @@
         },
         {
           "file": "src/app/core/model/address.ts",
-          "hash": "7766284725499554188"
+          "hash": "10701436299246158814"
         },
         {
           "file": "src/app/core/model/authentication-persist.ts",
@@ -367,7 +486,7 @@
         },
         {
           "file": "src/app/core/model/competition.ts",
-          "hash": "2905428002643973197",
+          "hash": "6256699801366620634",
           "deps": [
             "npm:@angular/common"
           ]
@@ -385,12 +504,16 @@
           "hash": "12660862480169220132"
         },
         {
+          "file": "src/app/core/model/location-response.ts",
+          "hash": "15095342380358194949"
+        },
+        {
           "file": "src/app/core/model/login-request.ts",
           "hash": "8505780043361329921"
         },
         {
           "file": "src/app/core/model/member.ts",
-          "hash": "5452640857544879264"
+          "hash": "15082782983661787503"
         },
         {
           "file": "src/app/core/model/pagination.ts",
@@ -414,10 +537,26 @@
           ]
         },
         {
-          "file": "src/app/core/services/competition.service.ts",
-          "hash": "141349044013003155",
+          "file": "src/app/core/services/cloudinary.service.spec.ts",
+          "hash": "11734799682706317316",
           "deps": [
             "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/core/services/cloudinary.service.ts",
+          "hash": "8916863848172546697",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/core/services/competition.service.ts",
+          "hash": "6613552099537561469",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs"
           ]
         },
         {
@@ -443,7 +582,7 @@
         },
         {
           "file": "src/app/core/services/member.service.ts",
-          "hash": "176848325974398978",
+          "hash": "1541107376079737611",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common",
@@ -479,7 +618,7 @@
         },
         {
           "file": "src/app/features/competition/competition.component.html",
-          "hash": "6202964843921849626"
+          "hash": "17033637580928902248"
         },
         {
           "file": "src/app/features/competition/competition.component.spec.ts",
@@ -490,9 +629,38 @@
         },
         {
           "file": "src/app/features/competition/competition.component.ts",
-          "hash": "2688906237737224456",
+          "hash": "10608480422822277504",
           "deps": [
             "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/features/competition-details/competition-details.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/features/competition-details/competition-details.component.html",
+          "hash": "2318060594647644902"
+        },
+        {
+          "file": "src/app/features/competition-details/competition-details.component.spec.ts",
+          "hash": "86859979460109127",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/features/competition-details/competition-details.component.ts",
+          "hash": "15448786379882207720",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@taiga-ui/core",
+            "npm:@angular/common",
+            "npm:@taiga-ui/kit",
+            "npm:@angular/forms",
+            "npm:@tinkoff/ng-polymorpheus",
+            "npm:rxjs"
           ]
         },
         {
@@ -523,7 +691,7 @@
         },
         {
           "file": "src/app/layout/admin-layout/admin-layout.component.html",
-          "hash": "17403300205830189418"
+          "hash": "14708028077879598182"
         },
         {
           "file": "src/app/layout/admin-layout/admin-layout.component.spec.ts",
@@ -534,16 +702,40 @@
         },
         {
           "file": "src/app/layout/admin-layout/admin-layout.component.ts",
-          "hash": "14908478980206902278",
+          "hash": "15927343243523452435",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/router",
             "npm:@angular/forms",
-            "npm:@taiga-ui/core",
             "npm:@taiga-ui/cdk",
             "npm:rxjs",
             "npm:flowbite",
-            "npm:@angular/common"
+            "npm:@angular/common",
+            "npm:@taiga-ui/core"
+          ]
+        },
+        {
+          "file": "src/app/shared/card-skeleton/card-skeleton.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/shared/card-skeleton/card-skeleton.component.html",
+          "hash": "6616914249980263967"
+        },
+        {
+          "file": "src/app/shared/card-skeleton/card-skeleton.component.spec.ts",
+          "hash": "8178949373388784038",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/shared/card-skeleton/card-skeleton.component.ts",
+          "hash": "11026253671724462198",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@taiga-ui/core"
           ]
         },
         {
@@ -592,12 +784,36 @@
           ]
         },
         {
+          "file": "src/app/shared/google-map/google-map.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/shared/google-map/google-map.component.html",
+          "hash": "15363145202271763502"
+        },
+        {
+          "file": "src/app/shared/google-map/google-map.component.spec.ts",
+          "hash": "15669302475821103135",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/shared/google-map/google-map.component.ts",
+          "hash": "14357437270907643848",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/google-maps",
+            "npm:@angular/common"
+          ]
+        },
+        {
           "file": "src/app/shared/nav-bar/nav-bar.component.css",
           "hash": "3244421341483603138"
         },
         {
           "file": "src/app/shared/nav-bar/nav-bar.component.html",
-          "hash": "3529897166184256404"
+          "hash": "4834975805413045561"
         },
         {
           "file": "src/app/shared/nav-bar/nav-bar.component.spec.ts",
@@ -638,7 +854,7 @@
         },
         {
           "file": "src/app/shared/side-bar/side-bar.component.html",
-          "hash": "17771497735834640703"
+          "hash": "2834132434646559676"
         },
         {
           "file": "src/app/shared/side-bar/side-bar.component.spec.ts",
@@ -649,10 +865,33 @@
         },
         {
           "file": "src/app/shared/side-bar/side-bar.component.ts",
-          "hash": "10348845750830056293",
+          "hash": "8486550499908004149",
           "deps": [
             "npm:@angular/core",
-            "npm:@angular/common"
+            "npm:@angular/common",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/shared/square-animate-top/square-animate-top.component.css",
+          "hash": "8824086964952588633"
+        },
+        {
+          "file": "src/app/shared/square-animate-top/square-animate-top.component.html",
+          "hash": "211381636310942056"
+        },
+        {
+          "file": "src/app/shared/square-animate-top/square-animate-top.component.spec.ts",
+          "hash": "1361702548246908936",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/shared/square-animate-top/square-animate-top.component.ts",
+          "hash": "15406499760478878120",
+          "deps": [
+            "npm:@angular/core"
           ]
         },
         {
@@ -661,7 +900,7 @@
         },
         {
           "file": "src/app/shared/table-skeleton/table-skeleton.component.html",
-          "hash": "1688850102874815333"
+          "hash": "14889743796312135504"
         },
         {
           "file": "src/app/shared/table-skeleton/table-skeleton.component.spec.ts",
@@ -703,6 +942,14 @@
           ]
         },
         {
+          "file": "src/app/utils/address-formatter.spec.ts",
+          "hash": "840924146275374496"
+        },
+        {
+          "file": "src/app/utils/address-formatter.ts",
+          "hash": "3817338354507543596"
+        },
+        {
           "file": "src/app/utils/range.spec.ts",
           "hash": "13245769585589107745"
         },
@@ -715,12 +962,20 @@
           "hash": "3244421341483603138"
         },
         {
+          "file": "src/assets/image.jpeg",
+          "hash": "1004053893868977190"
+        },
+        {
+          "file": "src/assets/ts.jpg",
+          "hash": "9157891744371573950"
+        },
+        {
           "file": "src/favicon.ico",
           "hash": "3988961587069885523"
         },
         {
           "file": "src/index.html",
-          "hash": "5541775535089600234"
+          "hash": "8625546725767185739"
         },
         {
           "file": "src/main.server.ts",
@@ -738,7 +993,7 @@
         },
         {
           "file": "src/styles.css",
-          "hash": "3350588047743758182"
+          "hash": "9965402221572572873"
         },
         {
           "file": "tailwind.config.js",

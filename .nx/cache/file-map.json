@@ -76,7 +76,7 @@
         },
         {
           "file": ".nx/cache/file-map.json",
-          "hash": "1002972549672637242"
+          "hash": "3226350171118257123"
         },
         {
           "file": ".nx/cache/lockfile.hash",
@@ -251,7 +251,7 @@
         },
         {
           "file": "src/app/app.routes.ts",
-          "hash": "2509640883574432174",
+          "hash": "17259187413063572749",
           "deps": [
             "npm:@angular/router"
           ]

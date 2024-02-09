@@ -32,7 +32,7 @@
     "@taiga-ui/styles": "^3.56.0",
     "@tinkoff/ng-dompurify": "^4.0.0",
     "chart.js": "^4.4.1",
-    "dompurify": "2.2.9",
+    "dompurify": "3.0.8",
     "express": "^4.18.2",
     "flowbite": "^2.2.0",
     "jwt-decode": "^4.0.0",
@@ -45,7 +45,7 @@
     "@angular-devkit/build-angular": "^17.0.5",
     "@angular/cli": "^17.0.5",
     "@angular/compiler-cli": "^17.0.0",
-    "@types/dompurify": "2.2.3",
+    "@types/dompurify": "3.0.5",
     "@types/express": "^4.17.17",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^18.18.0",
@@ -76,19 +76,19 @@
         },
         {
           "file": ".nx/cache/file-map.json",
-          "hash": "1002972549672637242"
+          "hash": "1355963746063920076"
         },
         {
           "file": ".nx/cache/lockfile.hash",
-          "hash": "3660168446923525600"
+          "hash": "12701231969613422940"
         },
         {
           "file": ".nx/cache/parsed-lock-file.json",
-          "hash": "9934399703087752781"
+          "hash": "13096151929561219700"
         },
         {
           "file": ".nx/cache/project-graph.json",
-          "hash": "5897278726613525412"
+          "hash": "13607190503092750828"
         },
         {
           "file": ".vscode/extensions.json",
@@ -112,11 +112,11 @@
         },
         {
           "file": "package-lock.json",
-          "hash": "17049785503185383769"
+          "hash": "14441364976210862385"
         },
         {
           "file": "package.json",
-          "hash": "14953642263138874914",
+          "hash": "5807014696358133452",
           "deps": [
             "npm:@angular/animations",
             "npm:@angular/cdk",
@@ -251,7 +251,7 @@
         },
         {
           "file": "src/app/app.routes.ts",
-          "hash": "2509640883574432174",
+          "hash": "17259187413063572749",
           "deps": [
             "npm:@angular/router"
           ]

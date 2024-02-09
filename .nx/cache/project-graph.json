@@ -2127,9 +2127,9 @@
       "type": "npm",
       "name": "npm:@humanwhocodes/config-array",
       "data": {
-        "version": "0.11.13",
+        "version": "0.11.14",
         "packageName": "@humanwhocodes/config-array",
-        "hash": "sha512-JSBDMiDKSzQVngfRjOdFXgFfklaXI4K9nLF49Auh21lmBWRLIK3+xTErTWD4KU54pb6coM6ESE7Awz/FNU3zgQ=="
+        "hash": "sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg=="
       }
     },
     "npm:@humanwhocodes/module-importer": {
@@ -2145,9 +2145,9 @@
       "type": "npm",
       "name": "npm:@humanwhocodes/object-schema",
       "data": {
-        "version": "2.0.1",
+        "version": "2.0.2",
         "packageName": "@humanwhocodes/object-schema",
-        "hash": "sha512-dvuCeX5fC9dXgJn9t+X5atfmgQAzUOWqS1254Gh0m6i8wKd10ebXkfNKiRK+1GWi/yTvvLDHpoxLr0xxxeslWw=="
+        "hash": "sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw=="
       }
     },
     "npm:@isaacs/cliui": {
@@ -4260,9 +4260,9 @@
       "type": "npm",
       "name": "npm:@types/dompurify",
       "data": {
-        "version": "2.2.3",
+        "version": "3.0.5",
         "packageName": "@types/dompurify",
-        "hash": "sha512-CLtc2mZK8+axmrz1JqtpklO/Kvn38arGc8o1l3UVopZaXXuer9ONdZwJ/9f226GrhRLtUmLr9WrvZsRSNpS8og=="
+        "hash": "sha512-1Wg0g3BtQF7sSb27fJQAKck1HECM6zV1EB66j8JH9i3LCjYabJa0FSdiSgsD5K/RbrsR0SiraKacLB+T8ZVYAg=="
       }
     },
     "npm:@types/eslint": {
@@ -6528,9 +6528,9 @@
       "type": "npm",
       "name": "npm:dompurify",
       "data": {
-        "version": "2.2.9",
+        "version": "3.0.8",
         "packageName": "dompurify",
-        "hash": "sha512-+9MqacuigMIZ+1+EwoEltogyWGFTJZWU3258Rupxs+2CGs4H914G9er6pZbsme/bvb5L67o2rade9n21e4RW/w=="
+        "hash": "sha512-b7uwreMYL2eZhrSCRC4ahLTeZcPZxSmYfmcQGXGkXiZSNW1X85v+SDM5KsWcpivIiUBH47Ji7NtyUdpLeF5JZQ=="
       }
     },
     "npm:domutils": {
@@ -18724,6 +18724,16 @@
       {
         "source": "npm:@tinkoff/ng-dompurify",
         "target": "npm:@angular/platform-browser",
+        "type": "static"
+      },
+      {
+        "source": "npm:@tinkoff/ng-dompurify",
+        "target": "npm:@types/dompurify",
+        "type": "static"
+      },
+      {
+        "source": "npm:@tinkoff/ng-dompurify",
+        "target": "npm:dompurify",
         "type": "static"
       },
       {

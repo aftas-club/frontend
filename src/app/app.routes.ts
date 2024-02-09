@@ -9,8 +9,6 @@ export const routes: Routes = [
     redirectTo: 'competition',
     pathMatch: 'full'
   },
-
-
   {
     path: 'competitions/:page',
     component: CompetitionComponent
@@ -23,8 +21,6 @@ export const routes: Routes = [
     path: 'competition/details/:id',
     component: CompetitionDetailsComponent
   },
-
-
   {
     path: 'members/:page',
     component: MemberComponent

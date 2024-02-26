@@ -1,9 +1,8 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {HttpClient, HttpParams} from "@angular/common/http";
 import {API_URL} from "../../config/api";
 import {Observable} from "rxjs";
 import {Pagination} from "../model/pagination";
-import {Member} from "../model/member";
 import {Competition} from "../model/competition";
 
 @Injectable({
@@ -14,14 +13,14 @@ export class CompetitionService {
   constructor(private http: HttpClient) {
   }
 
-  private apiUrl: string = API_URL + 'competition';
+  private apiUrl: string = API_URL + 'competitions';
 
-  getCompetitions(page: number, size: number) :Observable<Pagination<Competition>> {
+  getCompetitions(page: number, size: number): Observable<Pagination<Competition>> {
     const params = new HttpParams()
       .set('page', page.toString())
       .set('size', size.toString());
     return this.http
-      .get<Pagination<Competition>>(this.apiUrl, {params});
+      .get<Pagination<Competition>>(this.apiUrl + "/paged", {params});
   }
 
   getCompetition(id: string): Observable<Competition> {

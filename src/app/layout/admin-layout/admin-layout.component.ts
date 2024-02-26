@@ -1,9 +1,8 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {AbstractTuiThemeSwitcher, TuiLetModule} from "@taiga-ui/cdk";
 import {BehaviorSubject, Observable} from 'rxjs';
-import {initFlowbite} from 'flowbite';
 import {SideBarComponent} from "../../shared/side-bar/side-bar.component";
 import {NavBarComponent} from "../../shared/nav-bar/nav-bar.component";
 import {AsyncPipe, NgIf} from "@angular/common";
@@ -33,10 +32,7 @@ import {TuiModeModule, TuiRootModule, TuiScrollbarModule, TuiThemeNightModule} f
   templateUrl: './admin-layout.component.html',
   styleUrl: './admin-layout.component.css'
 })
-export class AdminLayoutComponent extends AbstractTuiThemeSwitcher implements OnInit {
-  ngOnInit(): void {
-    initFlowbite();
-  }
+export class AdminLayoutComponent extends AbstractTuiThemeSwitcher {
 
   isOpenedSideBar = false;
   isNight = false;

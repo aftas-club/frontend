@@ -138,16 +138,11 @@ export class AddMemberComponent implements OnInit {
         return;
       }
 
-      // const cloudConfig = new CloudConfig({cloudName: 'demo'});
-      // const urlConfig = new URLConfig({secure: true});
-      //
-      // this.img = new CloudinaryImage('docs/shoes', cloudConfig, urlConfig);
-
       this.notReadyToSubmit = true;
       const memberData = this.addMemberForm.value;
       const member: Member = {
-        name: memberData.name,
-        familyName: memberData.familyName,
+        firstname: memberData.name,
+        lastname: memberData.familyName,
         birthDate: memberData.birthDate,
         email: memberData.email,
         gender: memberData.gender,
@@ -161,7 +156,7 @@ export class AddMemberComponent implements OnInit {
       this.memberService.createMember(member).subscribe(
         (createdMember) => {
           this.alerts.open('', {
-            label: `Member ${createdMember.name} created successfully`,
+            label: `Member ${createdMember.firstname} ${createdMember.lastname} created successfully`,
             status: 'success',
             autoClose: true,
           }).subscribe();

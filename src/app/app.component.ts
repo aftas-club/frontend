@@ -55,5 +55,5 @@ export class AppComponent extends AbstractTuiThemeSwitcher implements OnInit {
     initFlowbite();
   }
 
-  title = 'market';
+  title = 'aftas';
 }

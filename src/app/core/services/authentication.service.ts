@@ -129,7 +129,7 @@ export class AuthenticationService {
         catchError(this.handleError),
         switchMap((token: AuthenticationResponse) => {
           this.tokenStorage.setToken(token);
-          this.router.navigateTo('/users/profile');
+          this.router.navigateTo('/users/profile').then();
           return of(true);
         })
       )
@@ -152,9 +152,9 @@ export class AuthenticationService {
       .get<void>(`${API_URL}auth/logout`)
       .pipe(
         catchError(this.handleError),
-        map(() => {
+        map(async () => {
             this.tokenStorage.clear();
-            this.router.navigateTo('/auth/login');
+            await this.router.navigateTo('/auth/login');
           }
         )
       );

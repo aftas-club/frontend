@@ -2610,6 +2610,15 @@
         "hash": "sha512-VDNVI70wfEwqoNliffAiMhsPry0CWKkifCLmfzr+SZEEdAaPEBr4FtRrrdcdq/ovmkcgoWukkH2MBljbCyHwtA=="
       }
     },
+    "npm:@ngrx/eslint-plugin": {
+      "type": "npm",
+      "name": "npm:@ngrx/eslint-plugin",
+      "data": {
+        "version": "17.1.1",
+        "packageName": "@ngrx/eslint-plugin",
+        "hash": "sha512-Lxfd8jDTn5+OxQY5Sav5tQWBrg7YcLiSgEuUTwBQwAldqBW7G2I3HNBU6qPglwJOJ6JKgHPXCGxIkQLs1Q2wfw=="
+      }
+    },
     "npm:@ngrx/operators": {
       "type": "npm",
       "name": "npm:@ngrx/operators",
@@ -4491,6 +4500,24 @@
         "hash": "sha512-I4q9QU9MQv4oEOz4tAHJtNz1cwuLxn2F3xcc2iV5WdqLPpUnj30aUuxt1mAxYTG+oe8CZMV/+6rU4S4gRDzqtQ=="
       }
     },
+    "npm:@typescript-eslint/experimental-utils": {
+      "type": "npm",
+      "name": "npm:@typescript-eslint/experimental-utils",
+      "data": {
+        "version": "5.62.0",
+        "packageName": "@typescript-eslint/experimental-utils",
+        "hash": "sha512-RTXpeB3eMkpoclG3ZHft6vG/Z30azNHuqY6wKPBHlVMZFuEvrtlEDe8gMqDb+SO+9hjC/pLekeSCryf9vMZlCw=="
+      }
+    },
+    "npm:@typescript-eslint/scope-manager@5.62.0": {
+      "type": "npm",
+      "name": "npm:@typescript-eslint/scope-manager@5.62.0",
+      "data": {
+        "version": "5.62.0",
+        "packageName": "@typescript-eslint/scope-manager",
+        "hash": "sha512-VXuvVvZeQCQb5Zgf4HAxc04q5j+WrNAtNh9OwCsCgpKqESMTu3tF/jhZ3xG6T4NZwWl65Bg8KuS2uEvhSfLl0w=="
+      }
+    },
     "npm:@typescript-eslint/scope-manager": {
       "type": "npm",
       "name": "npm:@typescript-eslint/scope-manager",
@@ -4500,13 +4527,13 @@
         "hash": "sha512-CXQA0xo7z6x13FeDYCgBkjWzNqzBn8RXaE3QVQVIUm74fWJLkJkaHmHdKStrxQllGh6Q4eUGyNpMe0b1hMkXFA=="
       }
     },
-    "npm:@typescript-eslint/type-utils": {
+    "npm:@typescript-eslint/types@5.62.0": {
       "type": "npm",
-      "name": "npm:@typescript-eslint/type-utils",
+      "name": "npm:@typescript-eslint/types@5.62.0",
       "data": {
-        "version": "6.13.2",
-        "packageName": "@typescript-eslint/type-utils",
-        "hash": "sha512-Qr6ssS1GFongzH2qfnWKkAQmMUyZSyOr0W54nZNU1MDfo+U4Mv3XveeLZzadc/yq8iYhQZHYT+eoXJqnACM1tw=="
+        "version": "5.62.0",
+        "packageName": "@typescript-eslint/types",
+        "hash": "sha512-87NVngcbVXUahrRTqIK27gD2t5Cu1yuCXxbLcFtCzZGlfyVWWh8mLHkoxzjsB6DDNnvdL+fW8MiwPEJyGJQDgQ=="
       }
     },
     "npm:@typescript-eslint/types": {
@@ -4518,6 +4545,15 @@
         "hash": "sha512-7sxbQ+EMRubQc3wTfTsycgYpSujyVbI1xw+3UMRUcrhSy+pN09y/lWzeKDbvhoqcRbHdc+APLs/PWYi/cisLPg=="
       }
     },
+    "npm:@typescript-eslint/typescript-estree@5.62.0": {
+      "type": "npm",
+      "name": "npm:@typescript-eslint/typescript-estree@5.62.0",
+      "data": {
+        "version": "5.62.0",
+        "packageName": "@typescript-eslint/typescript-estree",
+        "hash": "sha512-CmcQ6uY7b9y694lKdRB8FEel7JbU/40iSAPomu++SjLMntB+2Leay2LO6i8VnJk58MtE9/nQSFIH6jpyRWyYzA=="
+      }
+    },
     "npm:@typescript-eslint/typescript-estree": {
       "type": "npm",
       "name": "npm:@typescript-eslint/typescript-estree",
@@ -4525,6 +4561,15 @@
         "version": "6.13.2",
         "packageName": "@typescript-eslint/typescript-estree",
         "hash": "sha512-SuD8YLQv6WHnOEtKv8D6HZUzOub855cfPnPMKvdM/Bh1plv1f7Q/0iFUDLKKlxHcEstQnaUU4QZskgQq74t+3w=="
+      }
+    },
+    "npm:@typescript-eslint/utils@5.62.0": {
+      "type": "npm",
+      "name": "npm:@typescript-eslint/utils@5.62.0",
+      "data": {
+        "version": "5.62.0",
+        "packageName": "@typescript-eslint/utils",
+        "hash": "sha512-n8oxjeb5aIbPFEtmQxQYOLI0i9n5ySBEY/ZEHHZqKQSFnxio1rv6dthascc9dLuwrL0RC5mPCxB7vnAVGAYWAQ=="
       }
     },
     "npm:@typescript-eslint/utils": {
@@ -4536,6 +4581,15 @@
         "hash": "sha512-b9Ptq4eAZUym4idijCRzl61oPCwwREcfDI8xGk751Vhzig5fFZR9CyzDz4Sp/nxSLBYxUPyh4QdIDqWykFhNmQ=="
       }
     },
+    "npm:@typescript-eslint/visitor-keys@5.62.0": {
+      "type": "npm",
+      "name": "npm:@typescript-eslint/visitor-keys@5.62.0",
+      "data": {
+        "version": "5.62.0",
+        "packageName": "@typescript-eslint/visitor-keys",
+        "hash": "sha512-07ny+LHRzQXepkGg6w0mFY41fVUNBrL2Roj/++7V1txKugfjm/Ci/qSND03r2RhlJhJYMcTn9AhhSSqQp0Ysyw=="
+      }
+    },
     "npm:@typescript-eslint/visitor-keys": {
       "type": "npm",
       "name": "npm:@typescript-eslint/visitor-keys",
@@ -4543,6 +4597,15 @@
         "version": "6.13.2",
         "packageName": "@typescript-eslint/visitor-keys",
         "hash": "sha512-OGznFs0eAQXJsp+xSd6k/O1UbFi/K/L7WjqeRoFE7vadjAF9y0uppXhYNQNEqygjou782maGClOoZwPqF0Drlw=="
+      }
+    },
+    "npm:@typescript-eslint/type-utils": {
+      "type": "npm",
+      "name": "npm:@typescript-eslint/type-utils",
+      "data": {
+        "version": "6.13.2",
+        "packageName": "@typescript-eslint/type-utils",
+        "hash": "sha512-Qr6ssS1GFongzH2qfnWKkAQmMUyZSyOr0W54nZNU1MDfo+U4Mv3XveeLZzadc/yq8iYhQZHYT+eoXJqnACM1tw=="
       }
     },
     "npm:@ungap/structured-clone": {
@@ -6793,6 +6856,15 @@
         "version": "8.56.0",
         "packageName": "eslint",
         "hash": "sha512-Go19xM6T9puCOWntie1/P997aXxFsOi37JIHRWI514Hc6ZnaHGKY9xFhrU65RT6CcBEzZoGG1e6Nq+DT04ZtZQ=="
+      }
+    },
+    "npm:eslint-etc": {
+      "type": "npm",
+      "name": "npm:eslint-etc",
+      "data": {
+        "version": "5.2.1",
+        "packageName": "eslint-etc",
+        "hash": "sha512-lFJBSiIURdqQKq9xJhvSJFyPA+VeTh5xvk24e8pxVL7bwLBtGF60C/KRkLTMrvCZ6DA3kbPuYhLWY0TZMlqTsg=="
       }
     },
     "npm:eslint-scope": {
@@ -11502,6 +11574,33 @@
         "hash": "sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q=="
       }
     },
+    "npm:tslib@1.14.1": {
+      "type": "npm",
+      "name": "npm:tslib@1.14.1",
+      "data": {
+        "version": "1.14.1",
+        "packageName": "tslib",
+        "hash": "sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg=="
+      }
+    },
+    "npm:tsutils": {
+      "type": "npm",
+      "name": "npm:tsutils",
+      "data": {
+        "version": "3.21.0",
+        "packageName": "tsutils",
+        "hash": "sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA=="
+      }
+    },
+    "npm:tsutils-etc": {
+      "type": "npm",
+      "name": "npm:tsutils-etc",
+      "data": {
+        "version": "1.4.2",
+        "packageName": "tsutils-etc",
+        "hash": "sha512-2Dn5SxTDOu6YWDNKcx1xu2YUy6PUeKrWZB/x2cQ8vY2+iz3JRembKn/iZ0JLT1ZudGNwQQvtFX9AwvRHbXuPUg=="
+      }
+    },
     "npm:tuf-js": {
       "type": "npm",
       "name": "npm:tuf-js",
@@ -15884,6 +15983,36 @@
       "type": "static"
     },
     {
+      "source": "npm:@ngrx/eslint-plugin",
+      "target": "npm:eslint",
+      "type": "static"
+    },
+    {
+      "source": "npm:@ngrx/eslint-plugin",
+      "target": "npm:typescript",
+      "type": "static"
+    },
+    {
+      "source": "npm:@ngrx/eslint-plugin",
+      "target": "npm:@typescript-eslint/experimental-utils",
+      "type": "static"
+    },
+    {
+      "source": "npm:@ngrx/eslint-plugin",
+      "target": "npm:eslint-etc",
+      "type": "static"
+    },
+    {
+      "source": "npm:@ngrx/eslint-plugin",
+      "target": "npm:semver",
+      "type": "static"
+    },
+    {
+      "source": "npm:@ngrx/eslint-plugin",
+      "target": "npm:strip-json-comments",
+      "type": "static"
+    },
+    {
       "source": "npm:@ngrx/operators",
       "target": "npm:rxjs",
       "type": "static"
@@ -18511,6 +18640,146 @@
     {
       "source": "npm:@types/yargs",
       "target": "npm:@types/yargs-parser",
+      "type": "static"
+    },
+    {
+      "source": "npm:@typescript-eslint/experimental-utils",
+      "target": "npm:eslint",
+      "type": "static"
+    },
+    {
+      "source": "npm:@typescript-eslint/experimental-utils",
+      "target": "npm:@typescript-eslint/utils@5.62.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:@typescript-eslint/scope-manager@5.62.0",
+      "target": "npm:@typescript-eslint/types@5.62.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:@typescript-eslint/scope-manager@5.62.0",
+      "target": "npm:@typescript-eslint/visitor-keys@5.62.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:@typescript-eslint/typescript-estree@5.62.0",
+      "target": "npm:@typescript-eslint/types@5.62.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:@typescript-eslint/typescript-estree@5.62.0",
+      "target": "npm:@typescript-eslint/visitor-keys@5.62.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:@typescript-eslint/typescript-estree@5.62.0",
+      "target": "npm:debug",
+      "type": "static"
+    },
+    {
+      "source": "npm:@typescript-eslint/typescript-estree@5.62.0",
+      "target": "npm:globby@11.1.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:@typescript-eslint/typescript-estree@5.62.0",
+      "target": "npm:is-glob",
+      "type": "static"
+    },
+    {
+      "source": "npm:@typescript-eslint/typescript-estree@5.62.0",
+      "target": "npm:semver",
+      "type": "static"
+    },
+    {
+      "source": "npm:@typescript-eslint/typescript-estree@5.62.0",
+      "target": "npm:tsutils",
+      "type": "static"
+    },
+    {
+      "source": "npm:@typescript-eslint/utils@5.62.0",
+      "target": "npm:eslint",
+      "type": "static"
+    },
+    {
+      "source": "npm:@typescript-eslint/utils@5.62.0",
+      "target": "npm:@eslint-community/eslint-utils",
+      "type": "static"
+    },
+    {
+      "source": "npm:@typescript-eslint/utils@5.62.0",
+      "target": "npm:@types/json-schema",
+      "type": "static"
+    },
+    {
+      "source": "npm:@typescript-eslint/utils@5.62.0",
+      "target": "npm:@types/semver",
+      "type": "static"
+    },
+    {
+      "source": "npm:@typescript-eslint/utils@5.62.0",
+      "target": "npm:@typescript-eslint/scope-manager@5.62.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:@typescript-eslint/utils@5.62.0",
+      "target": "npm:@typescript-eslint/types@5.62.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:@typescript-eslint/utils@5.62.0",
+      "target": "npm:@typescript-eslint/typescript-estree@5.62.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:@typescript-eslint/utils@5.62.0",
+      "target": "npm:eslint-scope",
+      "type": "static"
+    },
+    {
+      "source": "npm:@typescript-eslint/utils@5.62.0",
+      "target": "npm:semver",
+      "type": "static"
+    },
+    {
+      "source": "npm:@typescript-eslint/visitor-keys@5.62.0",
+      "target": "npm:@typescript-eslint/types@5.62.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:@typescript-eslint/visitor-keys@5.62.0",
+      "target": "npm:eslint-visitor-keys",
+      "type": "static"
+    },
+    {
+      "source": "npm:globby@11.1.0",
+      "target": "npm:array-union",
+      "type": "static"
+    },
+    {
+      "source": "npm:globby@11.1.0",
+      "target": "npm:dir-glob",
+      "type": "static"
+    },
+    {
+      "source": "npm:globby@11.1.0",
+      "target": "npm:fast-glob",
+      "type": "static"
+    },
+    {
+      "source": "npm:globby@11.1.0",
+      "target": "npm:ignore",
+      "type": "static"
+    },
+    {
+      "source": "npm:globby@11.1.0",
+      "target": "npm:merge2",
+      "type": "static"
+    },
+    {
+      "source": "npm:globby@11.1.0",
+      "target": "npm:slash@3.0.0",
       "type": "static"
     },
     {
@@ -21216,6 +21485,31 @@
     {
       "source": "npm:eslint",
       "target": "npm:text-table",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint-etc",
+      "target": "npm:eslint",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint-etc",
+      "target": "npm:typescript",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint-etc",
+      "target": "npm:@typescript-eslint/experimental-utils",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint-etc",
+      "target": "npm:tsutils",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint-etc",
+      "target": "npm:tsutils-etc",
       "type": "static"
     },
     {
@@ -28271,6 +28565,36 @@
     {
       "source": "npm:supports-color@7.2.0",
       "target": "npm:has-flag@4.0.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:tsutils",
+      "target": "npm:typescript",
+      "type": "static"
+    },
+    {
+      "source": "npm:tsutils",
+      "target": "npm:tslib@1.14.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:tsutils-etc",
+      "target": "npm:tsutils",
+      "type": "static"
+    },
+    {
+      "source": "npm:tsutils-etc",
+      "target": "npm:typescript",
+      "type": "static"
+    },
+    {
+      "source": "npm:tsutils-etc",
+      "target": "npm:@types/yargs",
+      "type": "static"
+    },
+    {
+      "source": "npm:tsutils-etc",
+      "target": "npm:yargs",
       "type": "static"
     },
     {

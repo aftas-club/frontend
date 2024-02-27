@@ -36,7 +36,9 @@ export class CallbackComponent implements OnInit {
                     label: 'Invalid Google auth code callback',
                     status: 'error',
                     autoClose: true,
-                  }).subscribe(() => this.router.navigateTo('auth/login'));
+                  }).subscribe(() => this.router.navigateToLoginPage());
+                } else {
+                  this.authService.redirectToSpecificPage();
                 }
               }
             );
@@ -46,7 +48,7 @@ export class CallbackComponent implements OnInit {
               status: 'error',
               autoClose: true,
             }).subscribe();
-            await this.router.navigateTo('auth/login')
+            await this.router.navigateToLoginPage();
           }
         }
       );

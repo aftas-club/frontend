@@ -9,7 +9,27 @@ export class RoutingService {
   constructor(private router: Router) {
   }
 
-  async navigateTo(to: string) {
-    await this.router.navigateByUrl(to);
+  navigateTo(to: string) {
+    return this.router.navigateByUrl(to);
+  }
+
+  goToUser() {
+    return this.router.navigateByUrl("user");
+  }
+
+  goToManager() {
+    return this.router.navigateByUrl("manager");
+  }
+
+  goToMember() {
+    return this.router.navigateByUrl("member");
+  }
+
+  goToJury() {
+    return this.router.navigateByUrl("jury");
+  }
+
+  navigateToLoginPage(){
+    return this.router.navigateByUrl("auth/login");
   }
 }

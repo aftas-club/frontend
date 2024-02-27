@@ -30,10 +30,10 @@
           <button type="button" class="flex items-center focus:outline-none" aria-label="toggle profile dropdown">
             <div class="w-8 h-8 overflow-hidden border-2 border-gray-400 rounded-full">
               <img
-                ngSrc="assets/ts.jpg"
-                class="object-cover w-full h-full" alt="avatar" height="2969" width="3000">
+                [ngSrc]="user?.image || 'https://res.cloudinary.com/dggvib6ib/image/upload/v1679715870/blank-profile-picture-973460_1280_de4vlg.jpg'"
+                class="object-cover w-full h-full" [alt]="user?.email" height="57.6" width="57.6">
             </div>
-            <h3 class="mx-2 hidden md:block">Ouharri Outman</h3>
+            <h3 class="mx-2 hidden md:block">{{ user?.firstname + " " + user?.lastname }}</h3>
           </button>
         </div>
       </div>

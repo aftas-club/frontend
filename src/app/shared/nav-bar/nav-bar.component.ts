@@ -1,6 +1,8 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {NgOptimizedImage} from "@angular/common";
 import {FishAnimationComponent} from "../fish-animation/fish-animation.component";
+import {User} from "../../core/model/user";
+import {AuthenticationService} from "../../core/services/authentication.service";
 
 @Component({
   selector: 'nav-bar',
@@ -12,6 +14,18 @@ import {FishAnimationComponent} from "../fish-animation/fish-animation.component
   templateUrl: './nav-bar.component.html',
   styleUrl: './nav-bar.component.css'
 })
-export class NavBarComponent {
+export class NavBarComponent implements OnInit{
   @Input() IsOpen: Boolean = false;
+  user: User | undefined;
+
+  constructor(private service: AuthenticationService) {
+  }
+
+  ngOnInit(): void {
+    this.service.getCurrentAuthenticatedUser().subscribe((user: User) => {
+      this.user = user;
+    });
+  }
+
+
 }

@@ -1,0 +1,191 @@
+<div>
+  <div class="flex justify-between items-center mx-4">
+    <span class="font-bold text-xl">User profile:</span>
+    <div class="flex items-center justify-center gap-4">
+      <button
+        (click)="EditUserToggle()"
+        appearance="icon"
+        icon="tuiIconEditLarge"
+        size="s"
+        class="flex items-center justify-center"
+        title="Close"
+        tuiIconButton
+        type="button"
+      ></button>
+      <button
+        appearance="icon"
+        icon="tuiIconTrashLarge"
+        size="s"
+        class="flex items-center justify-center"
+        title="Close"
+        tuiIconButton
+        type="button"
+      ></button>
+    </div>
+  </div>
+  <div class="container w-full flex flex-col justify-center items-center my-5">
+    <div class="space-y-4">
+      <div class="flex items-center gap-28 space-y-4">
+        <div class="flex items-center w-fit gap-x-2 my-10">
+          <img class="object-cover w-16 h-16 rounded-2xl mr-3" loading="lazy"
+               [ngSrc]="user.image || 'https://res.cloudinary.com/dggvib6ib/image/upload/v1679715870/blank-profile-picture-973460_1280_de4vlg.jpg'"
+               [alt]="user.email" height="57.6" width="57.6">
+          <div>
+            <h2
+              class="text-lg font-medium text-gray-800 dark:text-white">{{ user.firstname + " " + user.lastname }}</h2>
+            <div
+              class="text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap flex items-center gap-2">
+              @if (user.status == UserStatus.ONLINE) {
+                <span class="w-3 rounded-full h-3 bg-green-400"></span>
+              } @else if (user.status == UserStatus.OFFLINE) {
+                <span class="w-3 h-3 rounded-full bg-red-500"></span>
+              } @else {
+                <span class="w-3 h-3 rounded-full bg-gray-300"></span>
+              }
+              {{ user.status || "UNKNOWN" }}
+            </div>
+          </div>
+        </div>
+
+        <div>
+        <span
+          class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#{{ user.role }}</span>
+          @if (user.enabled) {
+            <span
+              class="inline-block bg-green-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#enabled</span>
+          } @else {
+            <span class="inline-block bg-red-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#disabled</span>
+          }
+        </div>
+      </div>
+      <div class="flex gap-28 space-y-4">
+        <div class="space-y-4">
+          <div class="text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap flex items-center gap-2">
+            <button
+              appearance="icon"
+              icon="tuiIconMailLarge"
+              size="s"
+              title="Close"
+              tuiIconButton
+              type="button"
+            ></button>
+            <p
+              class="text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap flex items-center gap-2">{{ user.email }}</p>
+          </div>
+          <div class="text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap flex items-center gap-2">
+            <button
+              appearance="icon"
+              icon="tuiIconPhoneLarge"
+              size="s"
+              title="Close"
+              tuiIconButton
+              type="button"
+            ></button>
+            <span class="text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap flex items-center gap-2">
+      {{ user.phoneNumber || "xxxxxxxxxxxxxx" }}
+    </span>
+          </div>
+          <div class="text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap flex items-center gap-2">
+            <button
+              appearance="icon"
+              icon="tuiIconPaperclipLarge"
+              size="s"
+              title="Close"
+              tuiIconButton
+              type="button"
+            ></button>
+            @if (editUserToggleable) {
+              <span
+                class="text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap flex items-center gap-2">{{ user.role }}</span>
+            } @else {
+              <tui-select
+                [tuiTextfieldLabelOutside]="true"
+                tuiTextfieldSize="s"
+                class="tui-input w-full"
+                [(ngModel)]="user.role"
+              >
+                {{ user.role }}
+                <tui-data-list-wrapper
+                  *tuiDataList
+                  [items]="Object.values(Role)"
+                ></tui-data-list-wrapper>
+              </tui-select>
+            }
+          </div>
+        </div>
+        <div class="space-y-4">
+          <div class="text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap flex items-center gap-2">
+            <button
+              appearance="icon"
+              icon="tuiIconInfoLarge"
+              size="s"
+              class="flex items-center justify-center"
+              title="Close"
+              tuiIconButton
+              type="button"
+            ></button>
+            <div
+              class="inline-flex items-center px-3 py-1 rounded-full gap-x-2  text-gray-500 dark:text-gray-300">
+              <h2 class="text-sm font-normal">{{ user.gender || "UNKNOWN" }}</h2>
+              <svg *ngIf="user.gender == Gender.MALE" xmlns="http://www.w3.org/2000/svg" width="24"
+                   height="24"
+                   class="fill-blue-500 opacity-40"
+                   viewBox="0 0 24 24">
+                <circle cx="12" cy="4" r="2"></circle>
+                <path d="M15 7H9a1 1 0 0 0-1 1v7h2v7h4v-7h2V8a1 1 0 0 0-1-1z"></path>
+              </svg>
+              <svg *ngIf="user.gender == Gender.FEMALE" xmlns="http://www.w3.org/2000/svg" width="24"
+                   height="24"
+                   class="fill-emerald-500 opacity-40" viewBox="0 0 24 24">
+                <circle cx="12" cy="4" r="2"></circle>
+                <path
+                  d="M14.948 7.684A.997.997 0 0 0 14 7h-4a.998.998 0 0 0-.948.684l-2 6 1.775.593L8 18h2v4h4v-4h2l-.827-3.724 1.775-.593-2-5.999z"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap flex items-center gap-2">
+            @if (editUserToggleable) {
+              <button
+                appearance="icon"
+                icon="tuiIconToggleLeftLarge"
+                size="s"
+                class="flex items-center justify-center"
+                title="Close"
+                tuiIconButton
+                type="button"
+              ></button>
+            } @else {
+              <tui-toggle
+                [showIcons]="true"
+                size="m"
+                [(ngModel)]="user.enabled"
+              ></tui-toggle>
+            }
+            <div class="inline-flex items-center px-3 py-1 rounded-full gap-x-2  text-gray-500 dark:text-gray-300">
+              @if (user.enabled) {
+                <tui-tag value="true" status="custom" class="bg-green-200"></tui-tag>
+              } @else {
+                <tui-tag value="false" status="warning" class="bg-red-200"></tui-tag>
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mx-4">
+    @if (editUserToggleable) {
+      <button
+        (click)="close()"
+        class="bg-[#7bbcd1] float-right hover:bg-[#295e6e] mt-4 dark:bg-[#295e6e] dark:hover:bg-[#7bbcd1] disabled:cursor-not-allowed border-none py-2.5 px-5 text-sm font-medium text-white rounded-lg border border-gray-200 focus:z-10">
+        Ok
+      </button>
+    } @else {
+      <button
+        (click)="saveUser()"
+        class="bg-[#7bbcd1] float-right hover:bg-[#295e6e] mt-4 dark:bg-[#295e6e] dark:hover:bg-[#7bbcd1] disabled:cursor-not-allowed border-none py-2.5 px-5 text-sm font-medium text-white rounded-lg border border-gray-200 focus:z-10">
+        save
+      </button>
+    }
+  </div>
+</div>

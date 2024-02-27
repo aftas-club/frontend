@@ -97,11 +97,8 @@ export class LoginComponent implements OnInit {
               status: 'success',
               autoClose: true,
             }).subscribe();
-            window.dispatchEvent(new Event("login"));
-            // if (this.authService.getRoles()?.includes('ROLE_ADMINISTRATOR'))
-            //     this.router.goToAdmin();
-            // else if (this.authService.getRoles()?.includes('ROLE_RESPONSABLE_RAYON'))
-            //     this.router.goToResponsableRayon();
+            window.dispatchEvent(new Event("userLogged"));
+            this.authService.redirectToSpecificPage()
           } else
             this.notReadyToSubmit = true;
         });

@@ -31,7 +31,6 @@ import {MemberService} from "../../core/services/member.service";
 import {IdentityDocumentType} from "../../core/enum/identity-document-type";
 import {Gender} from "../../core/enum/gender";
 import {Member} from "../../core/model/member";
-import {CloudinaryImage} from "@cloudinary/url-gen";
 
 @Component({
   selector: 'app-add-member',
@@ -62,7 +61,6 @@ import {CloudinaryImage} from "@cloudinary/url-gen";
 export class AddMemberComponent implements OnInit {
   @Output() member = new EventEmitter<Member>();
   readonly control = new FormControl();
-  img!: CloudinaryImage;
 
   addMemberForm = new FormGroup({
     name: new FormControl(null, Validators.required),

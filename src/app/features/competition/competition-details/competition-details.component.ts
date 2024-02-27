@@ -1,19 +1,19 @@
 import {AfterViewInit, Component, Inject, Injector, OnDestroy, OnInit} from '@angular/core';
-import {AdminLayoutComponent} from "../../layout/admin-layout/admin-layout.component";
-import {CompetitionListComponent} from "../../components/competition-list/competition-list.component";
-import {Competition} from "../../core/model/competition";
-import {CompetitionService} from "../../core/services/competition.service";
+import {AdminLayoutComponent} from "../../../layout/admin-layout/admin-layout.component";
+import {CompetitionListComponent} from "../../../components/competition-list/competition-list.component";
+import {Competition} from "../../../core/model/competition";
+import {CompetitionService} from "../../../core/services/competition.service";
 import {ActivatedRoute, Router} from "@angular/router";
 import {TuiAlertService, TuiDialogService, TuiLoaderModule, TuiSvgModule} from "@taiga-ui/core";
 import {NgIf, NgOptimizedImage} from "@angular/common";
-import {OceanComponent} from "../../shared/ocean/ocean.component";
-import {WavesComponent} from "../../shared/waves/waves.component";
+import {OceanComponent} from "../../../shared/ocean/ocean.component";
+import {WavesComponent} from "../../../shared/waves/waves.component";
 import {TuiTabsModule} from "@taiga-ui/kit";
 import {FormsModule} from "@angular/forms";
-import {AddressFormatter} from "../../utils/address-formatter";
+import {AddressFormatter} from "../../../utils/address-formatter";
 import {PolymorpheusComponent} from "@tinkoff/ng-polymorpheus";
 import {Subscription} from "rxjs";
-import {RankingComponent} from "../../components/ranking/ranking.component";
+import {RankingComponent} from "../../../components/ranking/ranking.component";
 
 @Component({
   selector: 'app-competition-details',

@@ -129,7 +129,7 @@ export class AuthenticationService {
         catchError(this.handleError),
         switchMap((token: AuthenticationResponse) => {
           this.tokenStorage.setToken(token);
-          this.router.navigateTo('/users/profile').then();
+          this.redirectToSpecificPage().then();
           return of(true);
         })
       )
@@ -141,7 +141,7 @@ export class AuthenticationService {
    */
   getCurrentAuthenticatedUser(): Observable<User> {
     return this.http
-      .get<User>(`${API_URL}user/current`);
+      .get<User>(`${API_URL}users/current`);
   }
 
   /**
@@ -158,6 +158,17 @@ export class AuthenticationService {
           }
         )
       );
+  }
+
+  public async redirectToSpecificPage() {
+    if (this.getRoles()?.includes('ROLE_USER'))
+      await this.router.goToUser();
+    else if (this.getRoles()?.includes('ROLE_MANAGER'))
+      await this.router.goToManager();
+    else if (this.getRoles()?.includes('ROLE_MEMBER'))
+      await this.router.goToMember();
+    else if (this.getRoles()?.includes('ROLE_JURY'))
+      await this.router.goToJury();
   }
 
   /**

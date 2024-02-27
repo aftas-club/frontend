@@ -12305,6 +12305,26 @@
       },
       {
         "source": "market",
+        "target": "npm:@ngrx/effects",
+        "type": "static"
+      },
+      {
+        "source": "market",
+        "target": "npm:@ngrx/eslint-plugin",
+        "type": "static"
+      },
+      {
+        "source": "market",
+        "target": "npm:@ngrx/store",
+        "type": "static"
+      },
+      {
+        "source": "market",
+        "target": "npm:@ngrx/store-devtools",
+        "type": "static"
+      },
+      {
+        "source": "market",
         "target": "npm:@nrwl/angular",
         "type": "static"
       },
@@ -12446,6 +12466,11 @@
       {
         "source": "market",
         "target": "npm:@angular/compiler-cli",
+        "type": "static"
+      },
+      {
+        "source": "market",
+        "target": "npm:@ngrx/schematics",
         "type": "static"
       },
       {

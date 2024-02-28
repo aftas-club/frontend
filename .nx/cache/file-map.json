@@ -81,7 +81,7 @@
         },
         {
           "file": ".nx/cache/file-map.json",
-          "hash": "8491233054239738589"
+          "hash": "12113619892831775923"
         },
         {
           "file": ".nx/cache/lockfile.hash",
@@ -264,7 +264,7 @@
         },
         {
           "file": "src/app/app.routes.ts",
-          "hash": "15023131272695688876",
+          "hash": "6698240165696087049",
           "deps": [
             "npm:@angular/router"
           ]
@@ -316,7 +316,7 @@
         },
         {
           "file": "src/app/components/add-member/add-member.component.ts",
-          "hash": "3984311554132860473",
+          "hash": "18173940637034226671",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/forms",
@@ -325,8 +325,7 @@
             "npm:rxjs",
             "npm:@tinkoff/ng-polymorpheus",
             "npm:@angular/common",
-            "npm:@taiga-ui/cdk",
-            "npm:@cloudinary/url-gen"
+            "npm:@taiga-ui/cdk"
           ]
         },
         {
@@ -456,11 +455,47 @@
         },
         {
           "file": "src/app/core/enum/role.ts",
-          "hash": "13430147293218914447"
+          "hash": "16463237265945437773"
         },
         {
           "file": "src/app/core/enum/user-status.ts",
           "hash": "17221889096731350043"
+        },
+        {
+          "file": "src/app/core/guard/auth.guard.ts",
+          "hash": "10337294639768426118",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "src/app/core/guard/role-jury.guard.ts",
+          "hash": "17623459990043728829",
+          "deps": [
+            "npm:@angular/router",
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "src/app/core/guard/role-manager.guard.ts",
+          "hash": "8258416359770840286",
+          "deps": [
+            "npm:@angular/router",
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "src/app/core/guard/role-member.guard.ts",
+          "hash": "5482833913315012661",
+          "deps": [
+            "npm:@angular/router",
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
         },
         {
           "file": "src/app/core/interceptors/auth-interceptor.interceptor.ts",
@@ -563,7 +598,7 @@
         },
         {
           "file": "src/app/core/services/authentication.service.ts",
-          "hash": "2467925068481282591",
+          "hash": "16679432655938296407",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common",
@@ -641,7 +676,7 @@
         },
         {
           "file": "src/app/core/services/user.service.ts",
-          "hash": "9425402956957638659",
+          "hash": "8844862060761401928",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common",
@@ -654,7 +689,7 @@
         },
         {
           "file": "src/app/features/auth/Oauth/callback/callback.component.ts",
-          "hash": "6428405766720527922",
+          "hash": "15238180642912486544",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/router",
@@ -834,16 +869,36 @@
           ]
         },
         {
+          "file": "src/app/features/users/user-detail/user-detail.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/features/users/user-detail/user-detail.component.html",
+          "hash": "17334091261473132055"
+        },
+        {
+          "file": "src/app/features/users/user-detail/user-detail.component.ts",
+          "hash": "10938983610038377540",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@tinkoff/ng-polymorpheus",
+            "npm:@taiga-ui/core",
+            "npm:@angular/common",
+            "npm:@taiga-ui/kit",
+            "npm:@angular/forms"
+          ]
+        },
+        {
           "file": "src/app/features/users/user-table/user-table.component.css",
           "hash": "3244421341483603138"
         },
         {
           "file": "src/app/features/users/user-table/user-table.component.html",
-          "hash": "10426804605764130393"
+          "hash": "10113502440640927934"
         },
         {
           "file": "src/app/features/users/user-table/user-table.component.ts",
-          "hash": "2773135234858371199",
+          "hash": "14444715996295702479",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common",
@@ -1054,7 +1109,7 @@
         },
         {
           "file": "src/app/shared/nav-bar/nav-bar.component.html",
-          "hash": "4834975805413045561"
+          "hash": "363250270511055091"
         },
         {
           "file": "src/app/shared/nav-bar/nav-bar.component.spec.ts",
@@ -1065,7 +1120,7 @@
         },
         {
           "file": "src/app/shared/nav-bar/nav-bar.component.ts",
-          "hash": "10719557562091274283",
+          "hash": "18235616089734672801",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common"

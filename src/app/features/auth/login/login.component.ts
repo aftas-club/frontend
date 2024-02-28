@@ -16,6 +16,8 @@ import {RoutingService} from "../../../core/services/routing.service";
 import {SquareAnimateTopComponent} from "../../../shared/square-animate-top/square-animate-top.component";
 import {OceanComponent} from "../../../shared/ocean/ocean.component";
 import {RouterLink, RouterOutlet} from "@angular/router";
+import {NgIf} from "@angular/common";
+import {DomSanitizer } from "@angular/platform-browser";
 
 @Component({
   selector: 'app-login',
@@ -33,7 +35,8 @@ import {RouterLink, RouterOutlet} from "@angular/router";
     OceanComponent,
     TuiCheckboxModule,
     RouterOutlet,
-    RouterLink
+    RouterLink,
+    NgIf
   ],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css',
@@ -49,20 +52,26 @@ export class LoginComponent implements OnInit {
   constructor(
     @Inject(TuiAlertService) private readonly alerts: TuiAlertService,
     private authService: AuthenticationService,
+    private sanitizer : DomSanitizer,
     private router: RoutingService
   ) {
   }
 
-  googleOauthUrl: string | null = null;
+  googleOauthUrl: any = null;
   googleOauthUrlNotReady: boolean = true;
 
   ngOnInit(): void {
     this.authService.getOauthGoogleUrl().subscribe((url: string) => {
       this.googleOauthUrl = url;
-
+      console.log(this.googleOauthUrl)
+      console.log(this.sanitizer.bypassSecurityTrustResourceUrl(this.googleOauthUrl))
       if (this.googleOauthUrl && this.googleOauthUrl.length > 0)
         this.googleOauthUrlNotReady = false;
     });
+  }
+
+  getSafeUrl() {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(this.googleOauthUrl);
   }
 
   loginForm: FormGroup = new FormGroup({
